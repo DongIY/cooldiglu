@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/main/main.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/world/campus_map.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_panel.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/cg_gallery.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/save_load_menu.tscn" id="6"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1")
+
+[node name="CampusMap" parent="." instance=ExtResource("2")]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("3")]
+
+[node name="DialoguePanel" parent="UI" instance=ExtResource("4")]
+
+[node name="CGGallery" parent="UI" instance=ExtResource("5")]
+
+[node name="SaveLoadMenu" parent="UI" instance=ExtResource("6")]

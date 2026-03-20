@@ -1,0 +1,174 @@
+[
+  {
+    "id": "evt_school_gate_lin_intro",
+    "point_id": "school_gate",
+    "time_slot": "morning",
+    "speaker": "林澄",
+    "text": "你刚到校门口，就看到抱着活动资料的林澄被风吹乱了纸页。她抬头看了你一眼，像是在犹豫要不要开口求助。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_intro_done"],
+      "affection_at_least": {},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "过去帮她按住资料",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_intro_done"],
+        "mark_visited": true,
+        "result_text": "林澄对你的印象变好了，时间推进到了放学后。",
+        "advance_time": true
+      },
+      {
+        "text": "笑着和她打个招呼",
+        "affection_delta": {"lin": 1},
+        "set_flags": ["lin_intro_done"],
+        "mark_visited": true,
+        "result_text": "你们正式认识了，时间推进到了放学后。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_teaching_front_yuki_intro",
+    "point_id": "teaching_front",
+    "time_slot": "after_school",
+    "speaker": "雪纪",
+    "text": "教学楼前的光线刚刚好，雪纪正半蹲着找角度拍晚霞。她发现你靠近后，顺手把相机镜头转向你这边。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_intro_done"],
+      "affection_at_least": {},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "配合她的镜头摆个自然的姿势",
+        "affection_delta": {"yuki": 2},
+        "set_flags": ["yuki_intro_done"],
+        "mark_visited": true,
+        "result_text": "雪纪记住了你的表情，也想再约你一起拍照。",
+        "advance_time": false
+      },
+      {
+        "text": "好奇地问她在拍什么",
+        "affection_delta": {"yuki": 1},
+        "set_flags": ["yuki_intro_done"],
+        "mark_visited": true,
+        "result_text": "你知道了她常去记录校园光影的习惯。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_track_side_lin_mid",
+    "point_id": "track_side",
+    "time_slot": "after_school",
+    "speaker": "林澄",
+    "text": "操场边的人渐渐散去，林澄抱着签到表站在晚风里。她似乎已经习惯你会在这种时候出现，语气也比第一次柔和了许多。",
+    "conditions": {
+      "required_flags": ["lin_intro_done"],
+      "blocked_flags": ["lin_route_mid"],
+      "affection_at_least": {"lin": 1},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "陪她一起整理社团活动名单",
+        "affection_delta": {"lin": 3},
+        "set_flags": ["lin_route_mid"],
+        "mark_visited": true,
+        "result_text": "你们并肩忙到天色暗下来，时间推进到了夜晚。",
+        "advance_time": true
+      },
+      {
+        "text": "递给她一罐刚买的热饮",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_route_mid"],
+        "mark_visited": true,
+        "result_text": "林澄明显放松了下来，时间推进到了夜晚。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_courtyard_yuki_mid",
+    "point_id": "courtyard",
+    "time_slot": "after_school",
+    "speaker": "雪纪",
+    "text": "中庭的风铃被风轻轻吹响，雪纪把刚洗出来的试拍照片递给你。画面里有你路过时回头的一瞬，安静得像一段被偷藏起来的心事。",
+    "conditions": {
+      "required_flags": ["yuki_intro_done"],
+      "blocked_flags": ["yuki_route_mid"],
+      "affection_at_least": {"yuki": 1},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "认真夸她把光线拍得很好",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_route_mid"],
+        "mark_visited": true,
+        "result_text": "雪纪笑着把照片收好，时间推进到了夜晚。",
+        "advance_time": true
+      },
+      {
+        "text": "提议下次去更高的地方看夜景",
+        "affection_delta": {"yuki": 2},
+        "set_flags": ["yuki_route_mid"],
+        "mark_visited": true,
+        "result_text": "她认真记下了你的提议，时间推进到了夜晚。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_rooftop_lin_final",
+    "point_id": "rooftop",
+    "time_slot": "night",
+    "speaker": "林澄",
+    "text": "夜色落在天台栏杆上，校园里只剩稀疏的灯。林澄把最后一页资料合上，小声说如果今天没有你陪着，她大概会一个人忙到很晚。",
+    "conditions": {
+      "required_flags": ["lin_route_mid"],
+      "blocked_flags": ["lin_route_complete"],
+      "affection_at_least": {"lin": 4},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "告诉她以后也可以继续依赖你",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_route_complete"],
+        "mark_visited": true,
+        "unlock_cg": "cg_lin_rooftop",
+        "result_text": "你解锁了林澄的夜晚天台回忆。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_school_gate_yuki_final",
+    "point_id": "school_gate",
+    "time_slot": "night",
+    "speaker": "雪纪",
+    "text": "校门外的路灯把地面映成温柔的金色，雪纪把相机挂回肩上，轻轻说今天最想留下来的并不是风景，而是和你一起走出校门的这一刻。",
+    "conditions": {
+      "required_flags": ["yuki_route_mid"],
+      "blocked_flags": ["yuki_route_complete"],
+      "affection_at_least": {"yuki": 4},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "答应下次做她镜头里的固定搭档",
+        "affection_delta": {"yuki": 2},
+        "set_flags": ["yuki_route_complete"],
+        "mark_visited": true,
+        "unlock_cg": "cg_yuki_gate",
+        "result_text": "你解锁了雪纪的夜色校门回忆。",
+        "advance_time": false
+      }
+    ]
+  }
+]

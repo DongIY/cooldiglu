@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="768" viewBox="0 0 512 768">
+  <rect width="512" height="768" rx="36" fill="#fff6ea"/>
+  <circle cx="256" cy="220" r="110" fill="#ffe8c8"/>
+  <path d="M138 640c22-118 78-176 118-176s96 58 118 176" fill="#ffd3ad"/>
+  <path d="M152 210c24-68 64-110 104-110s80 42 104 110" fill="none" stroke="#5d4b46" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="220" cy="220" r="12" fill="#5d4b46"/>
+  <circle cx="292" cy="220" r="12" fill="#5d4b46"/>
+  <path d="M218 286c20 22 56 22 76 0" fill="none" stroke="#5d4b46" stroke-width="10" stroke-linecap="round"/>
+  <text x="256" y="700" text-anchor="middle" font-size="34" fill="#5d4b46" font-family="Arial, sans-serif">雪纪 占位立绘</text>
+</svg>

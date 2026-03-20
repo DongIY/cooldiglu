@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/campus_map.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/world/interaction_point.gd" id="3"]
+
+[node name="CampusMap" type="Node2D"]
+script = ExtResource("1")
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2(160, 180)
+script = ExtResource("2")
+
+[node name="SchoolGate" type="Node2D" parent="."]
+position = Vector2(160, 180)
+script = ExtResource("3")
+point_id = "school_gate"
+display_name = "校门"
+prompt_text = "看看有没有人在等你。"
+interaction_radius = 100.0
+
+[node name="TeachingFront" type="Node2D" parent="."]
+position = Vector2(350, 320)
+script = ExtResource("3")
+point_id = "teaching_front"
+display_name = "教学楼前"
+prompt_text = "前面好像有人在拍照。"
+interaction_radius = 92.0
+
+[node name="Courtyard" type="Node2D" parent="."]
+position = Vector2(620, 340)
+script = ExtResource("3")
+point_id = "courtyard"
+display_name = "中庭"
+prompt_text = "风铃声从中庭传了过来。"
+interaction_radius = 92.0
+
+[node name="TrackSide" type="Node2D" parent="."]
+position = Vector2(900, 420)
+script = ExtResource("3")
+point_id = "track_side"
+display_name = "操场边"
+prompt_text = "傍晚的操场边很适合慢慢说话。"
+interaction_radius = 92.0
+
+[node name="Rooftop" type="Node2D" parent="."]
+position = Vector2(980, 135)
+script = ExtResource("3")
+point_id = "rooftop"
+display_name = "天台入口"
+prompt_text = "上去看看夜色吧。"
+interaction_radius = 88.0

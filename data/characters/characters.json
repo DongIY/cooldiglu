@@ -1,0 +1,16 @@
+[
+  {
+    "id": "lin",
+    "name": "林澄",
+    "initial_affection": 0,
+    "route": "student_council",
+    "portrait": "res://assets/portraits/char_lin_default.svg"
+  },
+  {
+    "id": "yuki",
+    "name": "雪纪",
+    "initial_affection": 0,
+    "route": "photo_club",
+    "portrait": "res://assets/portraits/char_yuki_default.svg"
+  }
+]
