@@ -27,6 +27,12 @@ text = "地点：校门"
 [node name="AffectionLabel" type="Label" parent="TopBar"]
 text = "关系：林澄 0 / 雪纪 0"
 
+[node name="RestButton" type="Button" parent="TopBar"]
+custom_minimum_size = Vector2(90, 0)
+text = "💤 休息"
+theme_override_font_sizes/font_size = 13
+tooltip_text = "跳过当前时段，推进到下一个时间段（R 键）"
+
 [node name="BottomBar" type="VBoxContainer" parent="."]
 offset_left = 24.0
 offset_top = 620.0

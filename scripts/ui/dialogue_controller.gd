@@ -79,6 +79,7 @@ func present_event(event_payload: Dictionary) -> void:
 	_clear_choices()
 	_show_page(current_pages[current_page_index])
 	show()
+	AudioManager.play_sfx("dialogue_open")
 
 ## Show a single dialogue page with typewriter effect.
 func _show_page(page: Dictionary) -> void:
@@ -144,7 +145,7 @@ func _speaker_to_char_id(speaker_name: String) -> String:
 		"雪纪": return "yuki"
 		"苏逸": return "suyi"
 		"小唯": return "xiaowei"
-		"周老师": return "zhou_laoshi"
+		"周老师": return "teacher"  # Portrait file is char_teacher_*.svg
 		"陆辰": return ""  # Player, no portrait
 		_: return ""
 
@@ -214,6 +215,7 @@ func _on_choice_pressed(choice_index: int) -> void:
 	_clear_choices()
 	continue_hint.hide()
 	_pending_choice_index = choice_index
+	AudioManager.play_sfx("choice_select")
 
 	# Check if there are choice_result pages in dialogues.json
 	var dialogue_data: Dictionary = all_dialogues.get(current_event_id, {})

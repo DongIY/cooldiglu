@@ -36,6 +36,7 @@ func _ready() -> void:
 	campus_map.location_changed.connect(hud.set_location)
 	save_load_menu.save_requested.connect(_on_save_requested)
 	save_load_menu.load_requested.connect(_on_load_requested)
+	hud.rest_requested.connect(_on_rest_requested)
 
 	# Title screen signals
 	title_screen.start_new_game.connect(_on_start_new_game)
@@ -56,6 +57,7 @@ func _show_title_screen() -> void:
 	dialogue_panel.hide()
 	cg_gallery.hide()
 	save_load_menu.hide()
+	AudioManager.play_title_bgm()
 
 func _enter_gameplay() -> void:
 	game_started = true
@@ -69,6 +71,7 @@ func _enter_gameplay() -> void:
 	cg_gallery.refresh_gallery()
 	save_load_menu.set_status(_get_save_hint())
 	campus_map.refresh_points()
+	AudioManager.play_time_bgm(GameState.time_slot)
 
 func _on_start_new_game() -> void:
 	GameState.reset_state()
@@ -113,6 +116,10 @@ func _input(event: InputEvent) -> void:
 			SaveManager.load_from_slot(1)
 			get_viewport().set_input_as_handled()
 			return
+		if event.keycode == KEY_R:
+			_on_rest_requested()
+			get_viewport().set_input_as_handled()
+			return
 	if event.is_action_pressed("ui_cancel"):
 		save_load_menu.toggle_visible()
 		get_viewport().set_input_as_handled()
@@ -140,6 +147,8 @@ func _on_dialogue_finished(event_id: String) -> void:
 func _on_time_changed(day: int, _slot_id: String, slot_name: String) -> void:
 	hud.set_day_and_time(day, slot_name)
 	campus_map.refresh_points()
+	# Switch BGM to match new time of day
+	AudioManager.play_time_bgm(GameState.time_slot)
 	# Check for ending condition after each time advance
 	if ending_system:
 		ending_system.check_ending(day, GameState.time_slot)
@@ -181,9 +190,13 @@ func _refresh_after_state_change() -> void:
 	save_load_menu.set_status(_get_save_hint())
 
 func _get_save_hint() -> String:
-	if SaveManager.has_slot_save(1):
-		return "槽位1：已有存档（Esc 打开面板）"
-	return "槽位1：暂无存档（F5 可快速保存）"
+	var count := 0
+	for i in range(1, SaveManager.MAX_SLOTS + 1):
+		if SaveManager.has_slot_save(i):
+			count += 1
+	if count > 0:
+		return "已有 %d 个存档（Esc 打开存档面板）" % count
+	return "暂无存档（F5 快速保存到槽位1）"
 
 ## Called by EndingSystem when an ending should be triggered.
 func _on_ending_triggered(ending_event_id: String, ending_type: String, character_id: String) -> void:
@@ -195,3 +208,22 @@ func _on_ending_triggered(ending_event_id: String, ending_type: String, characte
 		dialogue_panel.present_event(event_payload)
 	else:
 		hud.push_status("结局事件数据缺失：%s" % ending_event_id)
+
+# ---------- Rest / Skip Time ----------
+
+## Called when the player chooses to rest (skip current time slot).
+func _on_rest_requested() -> void:
+	if dialogue_panel.is_open() or cg_gallery.visible or save_load_menu.visible:
+		return
+	var slot_name := TimeSystem.get_current_slot_name()
+	var rest_messages := [
+		"你找了个安静的角落休息了一会儿……",
+		"时间悄悄流过……",
+		"你在长椅上坐了一会儿，看着天空发呆……",
+		"你靠在树下闭了会儿眼，感觉好多了。",
+		"一段平静的时光。",
+	]
+	var message: String = rest_messages[randi() % rest_messages.size()]
+	hud.push_status(message)
+	TimeSystem.advance_time()
+	_refresh_after_state_change()

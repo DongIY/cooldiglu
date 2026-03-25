@@ -1,10 +1,16 @@
 extends Control
 
+signal rest_requested
+
 @onready var day_label: Label = $TopBar/DayLabel
 @onready var location_label: Label = $TopBar/LocationLabel
 @onready var affection_label: Label = $TopBar/AffectionLabel
+@onready var rest_button: Button = $TopBar/RestButton
 @onready var prompt_label: Label = $BottomBar/PromptLabel
 @onready var status_label: Label = $BottomBar/StatusLabel
+
+func _ready() -> void:
+	rest_button.pressed.connect(_on_rest_pressed)
 
 func set_day_and_time(day: int, slot_name: String) -> void:
 	day_label.text = "Day %d · %s" % [day, slot_name]
@@ -20,3 +26,6 @@ func set_interaction_prompt(prompt_text: String) -> void:
 
 func push_status(message: String) -> void:
 	status_label.text = message
+
+func _on_rest_pressed() -> void:
+	rest_requested.emit()

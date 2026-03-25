@@ -22,7 +22,7 @@ func _ready() -> void:
 	gallery_button.pressed.connect(_on_gallery)
 	quit_button.pressed.connect(_on_quit)
 	# Hide continue button if no save exists
-	continue_button.visible = SaveManager.has_slot_save(1)
+	continue_button.visible = SaveManager.has_any_save()
 
 func _on_new_game() -> void:
 	start_new_game.emit()

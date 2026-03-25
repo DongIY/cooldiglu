@@ -28,9 +28,10 @@ const ENDINGS := {
 }
 
 ## True ending required flags for each character
+## These must match the actual set_flags values in events.json
 const TRUE_ENDING_FLAGS := {
-	"lin": ["met_lin", "visited_council", "helped_festival", "waited_for_lin", "lin_trust", "suyi_entrust"],
-	"yuki": ["met_yuki", "darkroom_entered", "joined_photo_club", "yuki_pier_memory", "xiaowei_revealed", "film_developed"]
+	"lin": ["lin_ch1_helped", "lin_ch2_carry", "lin_ch3_promise", "lin_ch3_waited", "lin_ch4_trust", "lin_ch4_confession"],
+	"yuki": ["yuki_ch1_posed", "yuki_ch1_darkroom", "yuki_ch2_joined", "yuki_ch2_smile", "yuki_ch3_stayed", "yuki_ch4_developed"]
 }
 
 const TRUE_ENDING_AFFECTION := 15

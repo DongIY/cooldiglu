@@ -26,6 +26,7 @@ SaveManager="*res://scripts/autoload/save_manager.gd"
 TimeSystem="*res://scripts/systems/time_system.gd"
 AffectionSystem="*res://scripts/systems/affection_system.gd"
 EventSystem="*res://scripts/systems/event_system.gd"
+AudioManager="*res://scripts/systems/audio_manager.gd"
 
 [display]
 

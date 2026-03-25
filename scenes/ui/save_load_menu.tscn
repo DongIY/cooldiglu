@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://scripts/ui/save_load_menu.gd" id="1"]
 
 [node name="SaveLoadMenu" type="PanelContainer"]
-offset_left = 470.0
-offset_top = 180.0
-offset_right = 810.0
-offset_bottom = 410.0
+offset_left = 370.0
+offset_top = 150.0
+offset_right = 910.0
+offset_bottom = 460.0
 script = ExtResource("1")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
@@ -19,20 +19,14 @@ theme_override_constants/margin_bottom = 18
 theme_override_constants/separation = 14
 
 [node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer"]
-text = "存档菜单"
+theme_override_font_sizes/font_size = 18
+text = "📂  存档管理"
+horizontal_alignment = 1
 
-[node name="InfoLabel" type="Label" parent="MarginContainer/VBoxContainer"]
-text = "槽位1：暂无存档"
-autowrap_mode = 3
+[node name="SlotsContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+theme_override_constants/separation = 10
 
-[node name="Buttons" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-theme_override_constants/separation = 12
-
-[node name="SaveButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons"]
-text = "保存槽位1"
-
-[node name="LoadButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons"]
-text = "读取槽位1"
-
-[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons"]
+[node name="CloseButton" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 36)
+size_flags_horizontal = 4
 text = "关闭"
