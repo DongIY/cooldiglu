@@ -7,7 +7,7 @@
     "description": "天台栏杆旁，两人的手交叠在一起。初冬夜空星子漫天，路灯在她镜片上映出温暖的光点。她哭着笑了——那是你第一次看到她卸下所有防备的样子。",
     "locked_hint": "完成林澄路线所有关键事件，在冬夜的天台做出最勇敢的选择。",
     "trigger_event": "evt_lin_ch5_good",
-    "image_path": "res://assets/cg/cg_lin_rooftop_true.png"
+    "image_path": "res://assets/cg/cg_lin_rooftop_true.svg"
   },
   {
     "id": "cg_lin_rooftop_warm",
@@ -17,7 +17,7 @@
     "description": "你把围巾围在她脖子上，她低下头，手指攥住围巾的一端。风很大但谁都没有走开。那条围巾从此成了她每天都会戴的东西。",
     "locked_hint": "完成林澄路线关键事件，在天台用温暖代替言语。",
     "trigger_event": "evt_lin_ch5_good",
-    "image_path": "res://assets/cg/cg_lin_rooftop_warm.png"
+    "image_path": "res://assets/cg/cg_lin_rooftop_warm.svg"
   },
   {
     "id": "cg_lin_corridor",
@@ -27,7 +27,7 @@
     "description": "社团楼走廊的午后光影中，林澄对你认认真真鞠了一躬。旁边的公告板上还贴着你们一起做的文化祭海报。这不是结束，是新的开始。",
     "locked_hint": "与林澄保持一定好感度，在学期末与她道别。",
     "trigger_event": "evt_lin_ch5_normal",
-    "image_path": "res://assets/cg/cg_lin_corridor.png"
+    "image_path": "res://assets/cg/cg_lin_corridor.svg"
   },
   {
     "id": "cg_yuki_lighthouse_true",
@@ -37,7 +37,7 @@
     "description": "灯塔顶层，海风吹起她的银灰色长发。她面对你微笑——不是面对镜头，而是面对你。满天星光倒映在海面上，也倒映在她的眼睛里。",
     "locked_hint": "陪雪纪走过所有心路历程，在灯塔上放下相机。",
     "trigger_event": "evt_yuki_ch5_good",
-    "image_path": "res://assets/cg/cg_yuki_lighthouse_true.png"
+    "image_path": "res://assets/cg/cg_yuki_lighthouse_true.svg"
   },
   {
     "id": "cg_yuki_lighthouse_warm",
@@ -47,7 +47,7 @@
     "description": "你举着相机，画面里是她第一次面对镜头的笑容。快门声融化在海浪里。这是她送给你的礼物，也是你送给她的勇气。",
     "locked_hint": "陪雪纪走过心路历程，在灯塔上用快门定格笑容。",
     "trigger_event": "evt_yuki_ch5_good",
-    "image_path": "res://assets/cg/cg_yuki_lighthouse_warm.png"
+    "image_path": "res://assets/cg/cg_yuki_lighthouse_warm.svg"
   },
   {
     "id": "cg_yuki_exhibition",
@@ -57,7 +57,7 @@
     "description": "社团楼走廊的墙壁上，挂满了以你为主角的照片。不同角度、不同时段、不同表情。最中间那张的标签上写着展览名「心跳」。原来你一直被这样认真地看着。",
     "locked_hint": "加入摄影社并保持一定好感度，参加学期末展览。",
     "trigger_event": "evt_yuki_ch5_normal",
-    "image_path": "res://assets/cg/cg_yuki_exhibition.png"
+    "image_path": "res://assets/cg/cg_yuki_exhibition.svg"
   },
   {
     "id": "cg_fireworks",
@@ -67,7 +67,7 @@
     "description": "操场看台上，烟花映亮整个夜空。人群中只有你们两个人沉默着。烟花落下时，她的眼角有泪——但不是因为伤心。",
     "locked_hint": "在文化祭期间陪伴林澄度过最艰难的时刻。",
     "trigger_event": "evt_lin_ch4_2",
-    "image_path": "res://assets/cg/cg_fireworks.png"
+    "image_path": "res://assets/cg/cg_fireworks.svg"
   },
   {
     "id": "cg_pier_sunset",
@@ -77,6 +77,6 @@
     "description": "旧木码头上，逆光的两个剪影。一个举着相机，一个面朝大海。那天的夕阳格外温柔，像是专门为这一刻准备的。",
     "locked_hint": "加入摄影社后，跟随雪纪去码头公园拍照。",
     "trigger_event": "evt_yuki_ch2_2",
-    "image_path": "res://assets/cg/cg_pier_sunset.png"
+    "image_path": "res://assets/cg/cg_pier_sunset.svg"
   }
 ]

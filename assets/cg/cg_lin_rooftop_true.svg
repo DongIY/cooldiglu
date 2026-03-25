@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0a1628"/><stop offset="100%" stop-color="#1a2a4a"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#sky)"/>
+  <!-- stars -->
+  <circle cx="120" cy="80" r="2" fill="#ffffff" opacity="0.8"/><circle cx="300" cy="50" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="520" cy="120" r="2" fill="#ffffff" opacity="0.7"/><circle cx="780" cy="60" r="1.8" fill="#ffffff" opacity="0.9"/>
+  <circle cx="1000" cy="100" r="2" fill="#ffffff" opacity="0.5"/><circle cx="1180" cy="40" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="200" cy="160" r="1" fill="#ffffff" opacity="0.4"/><circle cx="640" cy="30" r="2.5" fill="#fffae0" opacity="0.9"/>
+  <circle cx="900" cy="140" r="1.2" fill="#ffffff" opacity="0.6"/><circle cx="450" cy="90" r="1.8" fill="#ffffff" opacity="0.5"/>
+  <!-- rooftop railing -->
+  <rect x="0" y="500" width="1280" height="220" fill="#2a3040"/>
+  <line x1="0" y1="500" x2="1280" y2="500" stroke="#4a5060" stroke-width="4"/>
+  <!-- two silhouettes holding hands -->
+  <ellipse cx="560" cy="360" rx="50" ry="60" fill="#1a2030"/>
+  <rect x="530" y="420" width="60" height="100" rx="8" fill="#1a2030"/>
+  <ellipse cx="720" cy="350" rx="45" ry="55" fill="#1a2030"/>
+  <rect x="692" y="405" width="56" height="110" rx="8" fill="#1a2030"/>
+  <!-- hands meeting -->
+  <line x1="590" y1="460" x2="692" y2="455" stroke="#1a2030" stroke-width="12" stroke-linecap="round"/>
+  <!-- title -->
+  <text x="640" y="660" text-anchor="middle" font-size="36" fill="#c8d0e0" font-family="Arial, sans-serif">冬夜天台 · 并肩</text>
+  <text x="640" y="690" text-anchor="middle" font-size="16" fill="#8090a0" font-family="Arial, sans-serif">CG 占位图 — cg_lin_rooftop_true</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="768" viewBox="0 0 512 768">
+  <rect width="512" height="768" rx="36" fill="#f0f0f8"/>
+  <circle cx="256" cy="220" r="110" fill="#f0e8f4"/>
+  <path d="M138 640c22-118 78-176 118-176s96 58 118 176" fill="#d4d0e8"/>
+  <path d="M140 260c24-80 60-140 116-140s92 60 116 140" fill="none" stroke="#a0a0b8" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="220" cy="218" r="11" fill="#4a4a6a"/>
+  <circle cx="292" cy="218" r="11" fill="#4a4a6a"/>
+  <!-- subtle smile (right corner up) -->
+  <path d="M240 278c8 6 28 8 38 2" fill="none" stroke="#4a4a6a" stroke-width="8" stroke-linecap="round"/>
+  <text x="256" y="700" text-anchor="middle" font-size="30" fill="#4a4a6a" font-family="Arial, sans-serif">雪纪 · 嘴角翘</text>
+</svg>

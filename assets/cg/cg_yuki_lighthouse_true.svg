@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs><linearGradient id="night" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#060818"/><stop offset="60%" stop-color="#101830"/><stop offset="100%" stop-color="#182848"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#night)"/>
+  <!-- many stars -->
+  <circle cx="100" cy="60" r="2" fill="#ffffff" opacity="0.9"/><circle cx="250" cy="100" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="400" cy="40" r="2.5" fill="#fffae0" opacity="1"/><circle cx="600" cy="80" r="1.8" fill="#ffffff" opacity="0.6"/>
+  <circle cx="800" cy="50" r="2" fill="#ffffff" opacity="0.8"/><circle cx="1050" cy="90" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="180" cy="180" r="1" fill="#ffffff" opacity="0.4"/><circle cx="900" cy="160" r="2" fill="#ffffff" opacity="0.5"/>
+  <!-- lighthouse silhouette -->
+  <rect x="1050" y="200" width="60" height="400" fill="#1a2030"/>
+  <polygon points="1050,200 1110,200 1130,180 1030,180" fill="#1a2030"/>
+  <circle cx="1080" cy="190" r="15" fill="#ffe080" opacity="0.6"/>
+  <!-- sea -->
+  <rect x="0" y="550" width="1280" height="170" fill="#101828"/>
+  <path d="M0 560c40-8 80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0s80 8 120 0" fill="none" stroke="#203050" stroke-width="3"/>
+  <!-- two facing silhouettes -->
+  <ellipse cx="540" cy="400" rx="42" ry="52" fill="#0a1020"/>
+  <rect x="512" y="452" width="56" height="100" rx="6" fill="#0a1020"/>
+  <ellipse cx="720" cy="395" rx="40" ry="50" fill="#0a1020"/>
+  <rect x="695" y="445" width="50" height="105" rx="6" fill="#0a1020"/>
+  <text x="640" y="660" text-anchor="middle" font-size="36" fill="#b0c0e0" font-family="Arial, sans-serif">灯塔星空 · 面对面</text>
+  <text x="640" y="690" text-anchor="middle" font-size="16" fill="#7088a0" font-family="Arial, sans-serif">CG 占位图 — cg_yuki_lighthouse_true</text>
+</svg>

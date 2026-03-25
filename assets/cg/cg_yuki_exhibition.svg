@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f8f4f0"/>
+  <!-- exhibition wall -->
+  <rect x="80" y="80" width="1120" height="480" fill="#ffffff" stroke="#d0c8c0" stroke-width="2"/>
+  <!-- photo frames on wall -->
+  <rect x="140" y="140" width="150" height="200" fill="#e0d8d0"/><rect x="145" y="145" width="140" height="190" fill="#c0b8b0"/>
+  <rect x="340" y="140" width="150" height="200" fill="#e0d8d0"/><rect x="345" y="145" width="140" height="190" fill="#b8c0b8"/>
+  <rect x="540" y="140" width="150" height="200" fill="#e0d8d0"/><rect x="545" y="145" width="140" height="190" fill="#c0b0b8"/>
+  <rect x="740" y="140" width="150" height="200" fill="#e0d8d0"/><rect x="745" y="145" width="140" height="190" fill="#b0b8c0"/>
+  <rect x="940" y="140" width="150" height="200" fill="#e0d8d0"/><rect x="945" y="145" width="140" height="190" fill="#c0c0b0"/>
+  <!-- "心跳" title plaque -->
+  <rect x="500" y="400" width="280" height="60" rx="8" fill="#f0e8e0"/>
+  <text x="640" y="440" text-anchor="middle" font-size="28" fill="#4a3a2a" font-family="Arial, sans-serif">「心跳」</text>
+  <!-- viewer silhouette -->
+  <ellipse cx="640" cy="560" rx="35" ry="40" fill="#3a3a4a"/>
+  <rect x="615" y="600" width="50" height="60" rx="6" fill="#3a3a4a"/>
+  <text x="640" y="660" text-anchor="middle" font-size="36" fill="#5a4a3a" font-family="Arial, sans-serif">展览墙 · 心跳</text>
+  <text x="640" y="690" text-anchor="middle" font-size="16" fill="#8a7a6a" font-family="Arial, sans-serif">CG 占位图 — cg_yuki_exhibition</text>
+</svg>

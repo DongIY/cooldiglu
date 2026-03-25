@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="768" viewBox="0 0 512 768">
+  <rect width="512" height="768" rx="36" fill="#f0f0f8"/>
+  <circle cx="256" cy="220" r="110" fill="#f0e8f4"/>
+  <path d="M138 640c22-118 78-176 118-176s96 58 118 176" fill="#d4d0e8"/>
+  <path d="M140 260c24-80 60-140 116-140s92 60 116 140" fill="none" stroke="#a0a0b8" stroke-width="20" stroke-linecap="round"/>
+  <!-- focused narrowed eyes -->
+  <ellipse cx="220" cy="218" rx="14" ry="8" fill="#4a4a6a"/>
+  <ellipse cx="292" cy="218" rx="14" ry="8" fill="#4a4a6a"/>
+  <!-- concentrated thin mouth -->
+  <line x1="235" y1="280" x2="277" y2="280" stroke="#4a4a6a" stroke-width="7" stroke-linecap="round"/>
+  <!-- camera rectangle (she's looking through viewfinder) -->
+  <rect x="320" y="240" width="44" height="30" rx="4" fill="none" stroke="#8888aa" stroke-width="3"/>
+  <circle cx="342" cy="255" r="8" fill="none" stroke="#8888aa" stroke-width="2"/>
+  <text x="256" y="700" text-anchor="middle" font-size="30" fill="#4a4a6a" font-family="Arial, sans-serif">雪纪 · 专注</text>
+</svg>

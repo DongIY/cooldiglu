@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="768" viewBox="0 0 512 768">
+  <rect width="512" height="768" rx="36" fill="#eef3ff"/>
+  <circle cx="256" cy="220" r="110" fill="#ffe2ea"/>
+  <path d="M138 640c22-118 78-176 118-176s96 58 118 176" fill="#c9d6ff"/>
+  <path d="M154 215c30-70 67-103 102-103s72 33 102 103" fill="none" stroke="#31446b" stroke-width="24" stroke-linecap="round"/>
+  <!-- wide surprised eyes -->
+  <circle cx="220" cy="218" r="15" fill="#31446b"/>
+  <circle cx="292" cy="218" r="15" fill="#31446b"/>
+  <circle cx="220" cy="218" r="6" fill="#ffffff"/>
+  <circle cx="292" cy="218" r="6" fill="#ffffff"/>
+  <!-- O-shaped mouth -->
+  <ellipse cx="256" cy="285" rx="14" ry="12" fill="none" stroke="#31446b" stroke-width="8"/>
+  <!-- heavy blush -->
+  <ellipse cx="195" cy="250" rx="28" ry="14" fill="#ff7a9a" opacity="0.5"/>
+  <ellipse cx="317" cy="250" rx="28" ry="14" fill="#ff7a9a" opacity="0.5"/>
+  <text x="256" y="700" text-anchor="middle" font-size="30" fill="#31446b" font-family="Arial, sans-serif">林澄 · 慌张</text>
+</svg>

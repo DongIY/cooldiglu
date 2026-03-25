@@ -1,6 +1,7 @@
 extends Node
 
 signal time_changed(day: int, slot_id: String, slot_name: String)
+signal day_changed(new_day: int)
 
 const SLOT_ORDER := ["morning", "after_school", "night"]
 const SLOT_NAMES := {
@@ -22,7 +23,11 @@ func advance_time() -> void:
 	index += 1
 	if index >= SLOT_ORDER.size():
 		index = 0
-		GameState.set_day(GameState.current_day + 1)
+		var new_day := GameState.current_day + 1
+		GameState.set_day(new_day)
+		# Reset daily trigger counts in EventSystem
+		EventSystem.on_new_day()
+		day_changed.emit(new_day)
 	GameState.set_time_slot(SLOT_ORDER[index])
 	time_changed.emit(GameState.current_day, GameState.time_slot, get_current_slot_name())
 

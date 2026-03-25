@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs><linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff8040"/><stop offset="40%" stop-color="#ff6060"/><stop offset="70%" stop-color="#c04080"/><stop offset="100%" stop-color="#402060"/></linearGradient></defs>
+  <rect width="1280" height="720" fill="url(#sunset)"/>
+  <!-- sun -->
+  <circle cx="640" cy="320" r="60" fill="#ffe080" opacity="0.8"/>
+  <circle cx="640" cy="320" r="80" fill="#ffe080" opacity="0.3"/>
+  <!-- sea -->
+  <rect x="0" y="400" width="1280" height="320" fill="#4030608a"/>
+  <!-- sun reflection on water -->
+  <ellipse cx="640" cy="480" rx="80" ry="8" fill="#ffc060" opacity="0.4"/>
+  <ellipse cx="640" cy="520" rx="60" ry="5" fill="#ffc060" opacity="0.3"/>
+  <!-- pier/boardwalk -->
+  <rect x="200" y="440" width="880" height="20" fill="#6a4a30"/>
+  <rect x="300" y="460" width="12" height="80" fill="#5a3a20"/>
+  <rect x="600" y="460" width="12" height="80" fill="#5a3a20"/>
+  <rect x="900" y="460" width="12" height="80" fill="#5a3a20"/>
+  <!-- two silhouettes on pier -->
+  <ellipse cx="560" cy="400" rx="30" ry="36" fill="#2a1a10"/>
+  <rect x="540" y="436" width="40" height="10" rx="3" fill="#2a1a10"/>
+  <ellipse cx="720" cy="396" rx="28" ry="34" fill="#2a1a10"/>
+  <rect x="702" y="430" width="36" height="10" rx="3" fill="#2a1a10"/>
+  <!-- seagulls -->
+  <path d="M180 200c8-12 16 0 24-12" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+  <path d="M240 180c6-10 12 0 18-10" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <text x="640" y="660" text-anchor="middle" font-size="36" fill="#ffe0c0" font-family="Arial, sans-serif">码头的黄昏</text>
+  <text x="640" y="690" text-anchor="middle" font-size="16" fill="#c0a080" font-family="Arial, sans-serif">CG 占位图 — cg_pier_sunset</text>
+</svg>

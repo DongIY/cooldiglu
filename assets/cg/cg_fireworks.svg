@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0a0820"/>
+  <!-- fireworks bursts -->
+  <circle cx="400" cy="200" r="80" fill="none" stroke="#ff6080" stroke-width="3" opacity="0.8"/>
+  <circle cx="400" cy="200" r="50" fill="none" stroke="#ffb060" stroke-width="2" opacity="0.6"/>
+  <line x1="400" y1="120" x2="400" y2="100" stroke="#ff6080" stroke-width="2"/><line x1="350" y1="150" x2="330" y2="135" stroke="#ff6080" stroke-width="2"/>
+  <line x1="450" y1="150" x2="470" y2="135" stroke="#ff6080" stroke-width="2"/><line x1="340" y1="200" x2="320" y2="200" stroke="#ffb060" stroke-width="2"/>
+  <circle cx="800" cy="160" r="100" fill="none" stroke="#60a0ff" stroke-width="3" opacity="0.7"/>
+  <circle cx="800" cy="160" r="60" fill="none" stroke="#80ffb0" stroke-width="2" opacity="0.5"/>
+  <line x1="800" y1="60" x2="800" y2="40" stroke="#60a0ff" stroke-width="2"/><line x1="730" y1="100" x2="710" y2="80" stroke="#60a0ff" stroke-width="2"/>
+  <line x1="870" y1="100" x2="890" y2="80" stroke="#60a0ff" stroke-width="2"/>
+  <circle cx="1100" cy="250" r="70" fill="none" stroke="#ffd060" stroke-width="3" opacity="0.8"/>
+  <!-- golden sparkles -->
+  <circle cx="300" cy="300" r="3" fill="#ffe080" opacity="0.8"/><circle cx="500" cy="250" r="2" fill="#ffb0c0" opacity="0.7"/>
+  <circle cx="700" cy="280" r="2.5" fill="#a0d0ff" opacity="0.6"/><circle cx="1000" cy="200" r="2" fill="#ffe080" opacity="0.9"/>
+  <!-- ground/bleachers -->
+  <rect x="0" y="500" width="1280" height="220" fill="#1a1830"/>
+  <!-- crowd silhouettes -->
+  <ellipse cx="200" cy="510" rx="25" ry="30" fill="#0a0818"/><ellipse cx="260" cy="515" rx="22" ry="28" fill="#0a0818"/>
+  <ellipse cx="400" cy="508" rx="24" ry="30" fill="#0a0818"/><ellipse cx="500" cy="512" rx="26" ry="30" fill="#0a0818"/>
+  <ellipse cx="640" cy="505" rx="28" ry="32" fill="#0a0818"/><ellipse cx="780" cy="510" rx="24" ry="30" fill="#0a0818"/>
+  <ellipse cx="900" cy="515" rx="22" ry="28" fill="#0a0818"/><ellipse cx="1040" cy="508" rx="26" ry="30" fill="#0a0818"/>
+  <text x="640" y="660" text-anchor="middle" font-size="36" fill="#e0c870" font-family="Arial, sans-serif">文化祭烟花</text>
+  <text x="640" y="690" text-anchor="middle" font-size="16" fill="#8a8060" font-family="Arial, sans-serif">CG 占位图 — cg_fireworks</text>
+</svg>
