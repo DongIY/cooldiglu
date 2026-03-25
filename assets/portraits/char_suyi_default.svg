@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="256" viewBox="0 0 128 256">
+  <rect width="128" height="256" fill="#e8f0e0" rx="8"/>
+  <circle cx="64" cy="56" r="28" fill="#7B9E6C"/>
+  <rect x="38" y="90" width="52" height="80" rx="6" fill="#5A7B48"/>
+  <text x="64" y="200" font-family="sans-serif" font-size="14" fill="#333" text-anchor="middle">苏逸</text>
+  <text x="64" y="220" font-family="sans-serif" font-size="10" fill="#666" text-anchor="middle">Su Yi</text>
+  <text x="64" y="240" font-family="sans-serif" font-size="9" fill="#999" text-anchor="middle">placeholder</text>
+</svg>

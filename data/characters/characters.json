@@ -2,15 +2,95 @@
   {
     "id": "lin",
     "name": "林澄",
+    "name_en": "Lin Cheng",
     "initial_affection": 0,
     "route": "student_council",
-    "portrait": "res://assets/portraits/char_lin_default.svg"
+    "portrait": "res://assets/portraits/char_lin_default.svg",
+    "age": 17,
+    "grade": "高二",
+    "role": "学生会副会长",
+    "appearance": "齐肩黑色直发，戴银框眼镜。校服穿得一丝不苟，左手腕上总戴着一只简洁的银色手表。身高165cm。",
+    "personality": "责任感极强但不善求助，习惯一个人扛所有事。其实内心很柔软，喜欢甜食但不好意思在人前吃。",
+    "catchphrase": "这件事我来处理就好。",
+    "affection_stages": [
+      {"min": 0, "max": 2, "label": "陌生", "address": "同学", "tone": "礼貌但疏远"},
+      {"min": 3, "max": 5, "label": "认识", "address": "陆辰同学", "tone": "偶尔多说两句"},
+      {"min": 6, "max": 9, "label": "熟悉", "address": "陆辰", "tone": "主动搭话，偶尔开玩笑"},
+      {"min": 10, "max": 14, "label": "亲近", "address": "辰……", "tone": "分享秘密，表达在意"},
+      {"min": 15, "max": 99, "label": "心意", "address": "你啊……", "tone": "坦白心意，特殊台词"}
+    ],
+    "relationship_arc": "防备→接受帮助→依赖→不安（怕失去）→坦诚心意",
+    "character_arc": "不是一个人扛才叫坚强，愿意让别人走进来也是一种勇气。"
   },
   {
     "id": "yuki",
     "name": "雪纪",
+    "name_en": "Yuki",
     "initial_affection": 0,
     "route": "photo_club",
-    "portrait": "res://assets/portraits/char_yuki_default.svg"
+    "portrait": "res://assets/portraits/char_yuki_default.svg",
+    "age": 17,
+    "grade": "高二",
+    "role": "摄影社唯一社员",
+    "appearance": "银灰色及腰长发（染的），右耳戴一只小巧的星形耳钉。喜欢在校服外套一件卡其色工装外套。身高158cm。",
+    "personality": "感受力极强但不善表达，用相机代替语言记录世界。看似独来独往但其实很在意别人的看法。",
+    "catchphrase": "……等一下，这个光不错。",
+    "affection_stages": [
+      {"min": 0, "max": 2, "label": "陌生", "address": "……", "tone": "不主动说话"},
+      {"min": 3, "max": 5, "label": "认识", "address": "你……", "tone": "犹豫开口"},
+      {"min": 6, "max": 9, "label": "熟悉", "address": "陆辰", "tone": "主动搭话，分享拍摄"},
+      {"min": 10, "max": 14, "label": "亲近", "address": "我跟你说件事", "tone": "分享秘密，开始信任"},
+      {"min": 15, "max": 99, "label": "心意", "address": "……只有你", "tone": "坦白心意，特殊台词"}
+    ],
+    "relationship_arc": "好奇→邀请入镜→主动分享作品→害怕被看透→选择用照片告白",
+    "character_arc": "比起拍下整个世界，我更想拍下和你在一起的每一刻。"
+  },
+  {
+    "id": "suyi",
+    "name": "苏逸",
+    "name_en": "Su Yi",
+    "initial_affection": 0,
+    "route": "npc",
+    "portrait": "res://assets/portraits/char_suyi_default.svg",
+    "age": 18,
+    "grade": "高三",
+    "role": "学生会会长",
+    "appearance": "温和的高三男生，戴着一副细框眼镜，总是微笑。",
+    "personality": "温和可靠，即将毕业，对后辈有强烈的责任感。",
+    "catchphrase": "拜托你了。",
+    "is_dateable": false,
+    "related_route": "lin"
+  },
+  {
+    "id": "xiaowei",
+    "name": "小唯",
+    "name_en": "Xiao Wei",
+    "initial_affection": 0,
+    "route": "npc",
+    "portrait": "res://assets/portraits/char_xiaowei_default.svg",
+    "age": 17,
+    "grade": "高二",
+    "role": "摄影社前社员",
+    "appearance": "扎着马尾的活泼女生，眼神锐利。",
+    "personality": "直率到有些伤人，但内心也很在意雪纪。退社是因为无法忍受雪纪总是躲在镜头后面。",
+    "catchphrase": "你总是这样！",
+    "is_dateable": false,
+    "related_route": "yuki"
+  },
+  {
+    "id": "zhou_laoshi",
+    "name": "周老师",
+    "name_en": "Teacher Zhou",
+    "initial_affection": 0,
+    "route": "npc",
+    "portrait": "res://assets/portraits/char_teacher_default.svg",
+    "age": 35,
+    "grade": "教师",
+    "role": "班主任",
+    "appearance": "中年女性，戴着圆框眼镜，总是穿素色毛衣。",
+    "personality": "温和的班主任，偶尔推动时间线发展。",
+    "catchphrase": "学期要结束了，社团汇报准备好了吗？",
+    "is_dateable": false,
+    "related_route": "general"
   }
 ]

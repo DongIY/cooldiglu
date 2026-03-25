@@ -1,0 +1,882 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "Campus Heartbeat 全事件多页对话数据",
+    "author": "dd (策划)",
+    "date": "2026-03-25",
+    "format_notes": "每个事件对应一组pages数组，每页包含speaker/expression/text。选项文本和效果仍由events.json管理，此文件负责叙事展开。"
+  },
+
+  "evt_lin_ch1_1": {
+    "title": "校门口的风",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "九月的第一天，你站在晨曦学院的铁艺拱门前。"},
+      {"speaker": "", "expression": "", "text": "紫藤花从拱门上垂落下来，门卫室旁的百年银杏才刚刚开始泛黄。"},
+      {"speaker": "", "expression": "", "text": "一阵秋风突然刮过——"},
+      {"speaker": "", "expression": "", "text": "前方几米处，一个齐肩黑发的女生抱着一摞文件，被风吹得手忙脚乱。"},
+      {"speaker": "", "expression": "", "text": "几张纸飞了出去，在空中翻着跟头。她皱起眉快步去追，自始至终没有开口喊任何人帮忙。"},
+      {"speaker": "", "expression": "", "text": "你注意到她左手腕上一只银色手表在阳光下闪了一下。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你追上去，弯腰捡起了飞到花坛边的最后两张。"},
+        {"speaker": "林澄", "expression": "default", "text": "……"},
+        {"speaker": "", "expression": "", "text": "她愣了一下，接过文件时手指微微停顿了一瞬。"},
+        {"speaker": "林澄", "expression": "serious", "text": "谢谢。"},
+        {"speaker": "", "expression": "", "text": "声音很认真，不是客套。她把文件重新理好，头也不回地走进了校门。"},
+        {"speaker": "", "expression": "", "text": "你看着她的背影——校服穿得一丝不苟，步伐笔直而快。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你站在原地，朝她喊了一声——"},
+        {"speaker": "陆辰", "expression": "", "text": "同学，你后面还有一张！"},
+        {"speaker": "", "expression": "", "text": "她回头看了你一眼，点了点头。"},
+        {"speaker": "林澄", "expression": "default", "text": "谢谢提醒。"},
+        {"speaker": "", "expression": "", "text": "然后自己走过来，弯腰捡起了那张纸。经过你身边时，脚步没有停。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch1_2": {
+    "title": "学生会的拜访",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "班主任说，想融入这所学校最快的方式就是加入一个社团。"},
+      {"speaker": "", "expression": "", "text": "放学后你来到社团楼。走廊里贴满花花绿绿的海报——动漫社、围棋社、轻音部……"},
+      {"speaker": "", "expression": "", "text": "二楼尽头有一扇开着的门。透过门缝，你看到一个熟悉的身影。"},
+      {"speaker": "", "expression": "", "text": "是昨天校门口那个女生——她一个人站在椅子上，正在整理一面巨大的活动公告板。"},
+      {"speaker": "", "expression": "", "text": "门牌上写着「学生会」。你敲了敲门框。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "陆辰", "expression": "", "text": "你好，我是新转来的……想了解一下学生会。"},
+        {"speaker": "", "expression": "", "text": "她从椅子上下来，推了推银框眼镜。"},
+        {"speaker": "林澄", "expression": "serious", "text": "学生会主要负责校内活动策划和社团管理。下周有文化祭筹备会，如果你感兴趣可以来旁听。"},
+        {"speaker": "", "expression": "", "text": "她说到活动筹备时，眼睛微微发亮——那是一种认真到发光的表情。"},
+        {"speaker": "林澄", "expression": "default", "text": "我是副会长，林澄。有什么不清楚的可以来找我。"},
+        {"speaker": "", "expression": "", "text": "她又转身继续整理公告板了。好像刚才那段介绍已经是她能给的最多的热情了。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你注意到公告板上有几颗图钉掉了。你捡起来递到她面前。"},
+        {"speaker": "林澄", "expression": "shy", "text": "……"},
+        {"speaker": "", "expression": "", "text": "她终于停下手里的活，转过头看了你一眼。"},
+        {"speaker": "林澄", "expression": "default", "text": "你是那个新转来的？"},
+        {"speaker": "", "expression": "", "text": "语气里有一点意外的柔软，像是没有预料到有人会主动帮忙。"},
+        {"speaker": "陆辰", "expression": "", "text": "嗯，昨天校门口……"},
+        {"speaker": "林澄", "expression": "default", "text": "我记得。谢谢你的图钉。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch2_1": {
+    "title": "社团文化祭筹备",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "文化祭的日子越来越近了。整个社团楼都弥漫着忙碌的气氛。"},
+      {"speaker": "", "expression": "", "text": "你在楼梯间看到林澄独自搬着几箱布展材料上楼。"},
+      {"speaker": "", "expression": "", "text": "箱子堆得比她的视线还高。她额头上渗着细密的汗珠，但一声不吭，咬着牙往上走。"},
+      {"speaker": "", "expression": "", "text": "三楼到了，她还有一层要爬。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你快步走上去，直接扛起了最底下那个最重的箱子。"},
+        {"speaker": "林澄", "expression": "flustered", "text": "你——！"},
+        {"speaker": "", "expression": "", "text": "她犹豫了一下，似乎不习惯被人帮忙。"},
+        {"speaker": "林澄", "expression": "shy", "text": "……谢谢。"},
+        {"speaker": "", "expression": "", "text": "你注意到她的手指因为搬了太久而发红，指节上还有被纸盒边缘划出的细小痕迹。"},
+        {"speaker": "", "expression": "", "text": "一起搬到四楼后，她仔细地把箱子码好，转过身——"},
+        {"speaker": "林澄", "expression": "smile", "text": "下次不用这样。……但还是谢谢。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "要不要找其他人帮忙？这也太多了吧。"},
+        {"speaker": "林澄", "expression": "serious", "text": "马上就好了。"},
+        {"speaker": "", "expression": "", "text": "她摇了摇头，然后咬着牙又搬起了一箱。"},
+        {"speaker": "", "expression": "", "text": "你站在原地看着她的背影消失在楼梯转角——有点倔，但说不上为什么，让人很想帮她。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch2_2": {
+    "title": "天台上的便当",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "放学后你来到天台，想看看传说中的海上日落。"},
+      {"speaker": "", "expression": "", "text": "推开门才发现——角落里坐着一个人。"},
+      {"speaker": "", "expression": "", "text": "林澄。她面前放着一个淡粉色的便当盒。看到你的瞬间，她明显慌了一下。"},
+      {"speaker": "", "expression": "", "text": "便当盒被她一把藏到了身后。银框眼镜后面的眼神有些躲闪。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你假装什么都没看到，在离她两步远的地方坐了下来。"},
+        {"speaker": "", "expression": "", "text": "海风吹过天台。夕阳把远处的海面染成了金色。"},
+        {"speaker": "", "expression": "", "text": "过了大概两分钟——"},
+        {"speaker": "林澄", "expression": "shy", "text": "……你不问吗？"},
+        {"speaker": "陆辰", "expression": "", "text": "嗯？问什么？"},
+        {"speaker": "", "expression": "", "text": "她看了你几秒，然后慢慢把便当盒拿了出来。打开——"},
+        {"speaker": "", "expression": "", "text": "里面是一块切得整整齐齐的草莓蛋糕。"},
+        {"speaker": "林澄", "expression": "shy", "text": "别跟别人说。"},
+        {"speaker": "", "expression": "", "text": "她的脸红到了耳根。原来那个一丝不苟的学生会副会长，私下里会一个人偷偷吃草莓蛋糕。"},
+        {"speaker": "", "expression": "", "text": "你的嘴角不由自主地弯了起来。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "你在吃什么呀？"},
+        {"speaker": "林澄", "expression": "flustered", "text": "没什么！"},
+        {"speaker": "", "expression": "", "text": "她红着脸把盒子收了起来，动作快得像是在做什么亏心事。"},
+        {"speaker": "", "expression": "", "text": "你总觉得空气里弥漫着一股草莓的甜香……"}
+      ]
+    }
+  },
+
+  "evt_lin_ch2_3": {
+    "title": "晚归的背影",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "夜色已经很深了。操场边只剩下几盏路灯还亮着。"},
+      {"speaker": "", "expression": "", "text": "远处，一个熟悉的身影从社团楼方向走过来。"},
+      {"speaker": "", "expression": "", "text": "林澄。她抱着一摞签到表，脚步有些疲惫。路灯把她的影子拉得很长很长。"},
+      {"speaker": "", "expression": "", "text": "她没有注意到你。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你走上前去。"},
+        {"speaker": "陆辰", "expression": "", "text": "我送你到校门口吧。"},
+        {"speaker": "", "expression": "", "text": "她停下脚步，嘴唇动了动——你看得出她想拒绝。"},
+        {"speaker": "林澄", "expression": "tired", "text": "……那就麻烦你了。"},
+        {"speaker": "", "expression": "", "text": "一路上她走得比平时慢了很多。路灯一盏接一盏地在你们身后熄灭。"},
+        {"speaker": "", "expression": "", "text": "快到校门时，她突然小声说了一句——"},
+        {"speaker": "林澄", "expression": "smile", "text": "……今天加班到现在，你是第一个发现的。"},
+        {"speaker": "", "expression": "", "text": "她说完就加快脚步走了。你站在校门口，看着她的背影消失在路灯尽头。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你没有叫住她，而是默默跟在后面，保持着不会被发现的距离。"},
+        {"speaker": "", "expression": "", "text": "直到看她安全走出校门，上了公交车。"},
+        {"speaker": "", "expression": "", "text": "第二天早上——"},
+        {"speaker": "林澄", "expression": "serious", "text": "陆辰。"},
+        {"speaker": "陆辰", "expression": "", "text": "嗯？"},
+        {"speaker": "林澄", "expression": "default", "text": "昨晚……好像看到你了。"},
+        {"speaker": "", "expression": "", "text": "语气里分不清是质问还是感谢。但你注意到她说这句话的时候，没有看你的眼睛。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch3_1": {
+    "title": "苏逸的委托",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "放学后你往社团楼走的时候，在走廊被人叫住了。"},
+      {"speaker": "苏逸", "expression": "default", "text": "你就是最近常帮林澄忙的那个转学生吧？"},
+      {"speaker": "", "expression": "", "text": "一个温和的高三男生——学生会长苏逸。他笑了笑，但眼神里有些认真。"},
+      {"speaker": "苏逸", "expression": "default", "text": "我下学期就毕业了。学生会的事，都要交给她了。"},
+      {"speaker": "苏逸", "expression": "default", "text": "她这个人……不到倒下都不会说累的。你应该看出来了吧？"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你认真地点了点头。"},
+        {"speaker": "陆辰", "expression": "", "text": "我会多注意的。"},
+        {"speaker": "苏逸", "expression": "default", "text": "拜托你了。"},
+        {"speaker": "", "expression": "", "text": "他拍了拍你的肩。那份承诺的分量，比你想象的要重。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "她比你想的坚强。但我也会注意的。"},
+        {"speaker": "", "expression": "", "text": "苏逸看了你一会儿，然后笑了。"},
+        {"speaker": "苏逸", "expression": "default", "text": "看来她找到了靠得住的人。"},
+        {"speaker": "", "expression": "", "text": "他转身走了。你站在走廊里，突然觉得和林澄之间的关系，似乎不只是"帮忙"了。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch3_2": {
+    "title": "拒绝与退缩",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "文化祭布展进入最后冲刺。你来到天台，想帮林澄分担一些工作。"},
+      {"speaker": "", "expression": "", "text": "但她看到你的瞬间，表情突然变了。"},
+      {"speaker": "林澄", "expression": "serious", "text": "你不用管，我自己能做。"},
+      {"speaker": "", "expression": "", "text": "她的语气冰冷得让你措手不及。然后——门关上了。"},
+      {"speaker": "", "expression": "", "text": "你站在天台的门前。门的另一边，传来很轻很轻的叹气声。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你没有离开。你在门外坐了下来，靠着冰冷的墙壁。"},
+        {"speaker": "陆辰", "expression": "", "text": "我就在这等你。不急。"},
+        {"speaker": "", "expression": "", "text": "门的那边沉默了很久。你能听到风声，能听到远处操场传来的篮球声。"},
+        {"speaker": "", "expression": "", "text": "不知道过了多久——门吱呀一声打开了。"},
+        {"speaker": "林澄", "expression": "moved", "text": "……进来吧。"},
+        {"speaker": "", "expression": "", "text": "她没看你。但她的眼眶有点红。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你转身离开了。也许她现在需要的是空间，不是陪伴。"},
+        {"speaker": "", "expression": "", "text": "走到楼梯一半的时候——你听到天台那边，有什么东西掉在地上的声音。"},
+        {"speaker": "", "expression": "", "text": "你停了一下。最终还是继续走了下去。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch3_3": {
+    "title": "深夜的电话",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "已经很晚了。校门附近的路灯把一切都笼罩在昏黄的光里。"},
+      {"speaker": "", "expression": "", "text": "你等了一会儿——林澄还没出校门。"},
+      {"speaker": "", "expression": "", "text": "远处，你隐约听到她的声音。她在打电话。"},
+      {"speaker": "林澄", "expression": "tired", "text": "姐，我没事……真的没事……"},
+      {"speaker": "", "expression": "", "text": "那是你从未听过的语气——疲惫，委屈，像是一个撑了很久的人终于找到了可以示弱的对象。"},
+      {"speaker": "林澄", "expression": "moved", "text": "就是有点累……没什么的，你别担心……"},
+      {"speaker": "", "expression": "", "text": "她挂了电话。在路灯下站了很久。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你等她挂了电话，才走过去。手里多了一罐刚从贩卖机买的热可可。"},
+        {"speaker": "", "expression": "", "text": "你没有说话。只是把热可可递到她面前。"},
+        {"speaker": "", "expression": "", "text": "她接过去的手在微微发抖。"},
+        {"speaker": "林澄", "expression": "moved", "text": "你怎么知道我在这……"},
+        {"speaker": "", "expression": "", "text": "声音带着鼻音。她低下头，两只手捧着热可可，指尖慢慢被暖意浸透。"},
+        {"speaker": "", "expression": "", "text": "很久之后——"},
+        {"speaker": "林澄", "expression": "smile", "text": "……笨蛋。"},
+        {"speaker": "", "expression": "", "text": "她转过身，往校门走去。你跟在她旁边。这一次，她没有说"不用送了"。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你假装刚到，若无其事地走了过去。"},
+        {"speaker": "陆辰", "expression": "", "text": "这么晚了，你还没走？"},
+        {"speaker": "林澄", "expression": "smile", "text": "嗯。刚忙完。"},
+        {"speaker": "", "expression": "", "text": "她勉强笑了笑，把手机收起来。但你看到她的眼角还是红的。"},
+        {"speaker": "", "expression": "", "text": "有些东西，她还是不愿意让你看到。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch4_1": {
+    "title": "文化祭当天",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "文化祭的早晨，整个校园都沸腾了。"},
+      {"speaker": "", "expression": "", "text": "教学楼前挂满了彩旗，广播里放着轻快的音乐。每个社团的展位都布置得花花绿绿。"},
+      {"speaker": "", "expression": "", "text": "然而——学生会的展区出了问题。"},
+      {"speaker": "", "expression": "", "text": "布展材料送错了。原本订的海报变成了另一个社团的物资。"},
+      {"speaker": "", "expression": "", "text": "林澄站在展位前，咬着唇打电话协调。她的声音在控制着不发抖。"},
+      {"speaker": "林澄", "expression": "tired", "text": "是的，需要换……对，现在就要……"},
+      {"speaker": "", "expression": "", "text": "你看得出来——她快到极限了。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你走上去，轻轻拿过了她手里的电话。"},
+        {"speaker": "陆辰", "expression": "", "text": "这里交给我。你先去喝口水。"},
+        {"speaker": "", "expression": "", "text": "她看着你。这一次——她没有拒绝。"},
+        {"speaker": "", "expression": "", "text": "你用最平稳的语气处理完了电话。转头看她——"},
+        {"speaker": "", "expression": "", "text": "她正低着头，肩膀在微微颤抖。不知道是终于放松了，还是终于撑不住了。"},
+        {"speaker": "林澄", "expression": "moved", "text": "……你什么时候变得这么可靠了。"},
+        {"speaker": "", "expression": "", "text": "她的声音很小。但你听得很清楚。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你什么也没说，转身去了物资仓库。"},
+        {"speaker": "", "expression": "", "text": "二十分钟后，你扛着正确的海报和展架回到了展位。"},
+        {"speaker": "", "expression": "", "text": "林澄挂了电话，发现物资已经被你搬好了一半。"},
+        {"speaker": "林澄", "expression": "moved", "text": "……笨蛋。"},
+        {"speaker": "", "expression": "", "text": "嘴唇动了动，最后只说出了这两个字。但她的眼睛红了。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch4_2": {
+    "title": "烟花下的真话",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "文化祭的尾声。所有展位都已经收摊了。"},
+      {"speaker": "", "expression": "", "text": "操场上响起了第一声烟花——"},
+      {"speaker": "", "expression": "", "text": "砰。"},
+      {"speaker": "", "expression": "", "text": "金色的花绽放在夜空里，洒下一片闪烁的光点。人群发出欢呼声。"},
+      {"speaker": "", "expression": "", "text": "你在人群中找到了林澄。她一个人站在看台最高处，远离人群。"},
+      {"speaker": "", "expression": "", "text": "走近时你发现——她的眼眶是红的。烟花在她的镜片上一明一灭。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你什么都没说。在她旁边坐了下来。"},
+        {"speaker": "", "expression": "", "text": "烟花一朵接一朵，在头顶绽放又消散。人群的欢呼声在远处此起彼伏。"},
+        {"speaker": "", "expression": "", "text": "很久之后——"},
+        {"speaker": "林澄", "expression": "moved", "text": "……其实有时候，我也想有人帮我。"},
+        {"speaker": "", "expression": "", "text": "她的声音很轻，像是说给自己听的。"},
+        {"speaker": "林澄", "expression": "moved", "text": "苏逸学长要走了。姐姐出了国。我一直觉得一个人扛着就好了，反正也习惯了。"},
+        {"speaker": "林澄", "expression": "moved", "text": "但是……"},
+        {"speaker": "", "expression": "", "text": "烟花在身后绽放。她的泪终于落了下来。"},
+        {"speaker": "", "expression": "", "text": "你没有说话。只是安静地坐在她身边。有时候陪伴比任何话语都重要。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "还好吗？"},
+        {"speaker": "林澄", "expression": "smile", "text": "嗯，没事。"},
+        {"speaker": "", "expression": "", "text": "她说"没事"。但没有走开。"},
+        {"speaker": "", "expression": "", "text": "你们就这样并肩站着，直到最后一朵烟花在夜空中散尽。"}
+      ]
+    }
+  },
+
+  "evt_lin_ch5_good": {
+    "title": "冬夜天台的告白",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "冬天来了。天台上的风比秋天冷了很多。"},
+      {"speaker": "", "expression": "", "text": "你收到了一条消息。号码是林澄的——她从来没有主动给你发过消息。"},
+      {"speaker": "林澄", "expression": "", "text": "【你能来天台一趟吗】"},
+      {"speaker": "", "expression": "", "text": "你推开天台的门。寒风灌进来。"},
+      {"speaker": "", "expression": "", "text": "林澄背对着你，站在栏杆旁。她穿着灰色的针织开衫，头发被风吹乱了也没有去理。"},
+      {"speaker": "林澄", "expression": "tired", "text": "苏逸学长毕业了。姐姐出国了。"},
+      {"speaker": "林澄", "expression": "tired", "text": "我一直觉得……靠自己就够了。一个人扛着、一个人做决定、一个人加班到最晚……"},
+      {"speaker": "", "expression": "", "text": "她转过身。路灯下，你能看到她眼角有泪光。"},
+      {"speaker": "林澄", "expression": "moved", "text": "但是——"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你走上前。"},
+        {"speaker": "", "expression": "", "text": "握住了她的手。"},
+        {"speaker": "", "expression": "", "text": "她的手冰凉的。但她紧紧回握了你。"},
+        {"speaker": "陆辰", "expression": "", "text": "以后你不用一个人了。"},
+        {"speaker": "", "expression": "", "text": "泪顺着她的脸颊滑下来。但嘴角弯了。"},
+        {"speaker": "林澄", "expression": "moved", "text": "你啊……"},
+        {"speaker": "林澄", "expression": "moved", "text": "明明我说了不用担心的。"},
+        {"speaker": "", "expression": "", "text": "她哭着笑了。夜空下，初冬的星子漫天。路灯在她的镜片上映出温暖的光点。"},
+        {"speaker": "", "expression": "", "text": "两个人的影子，终于重叠在一起。"},
+        {"speaker": "", "expression": "", "text": "【冬夜天台 · 并肩】"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你把围巾解下来，轻轻围在她的脖子上。"},
+        {"speaker": "", "expression": "", "text": "她低下头。手指攥住了围巾的一端。"},
+        {"speaker": "林澄", "expression": "shy", "text": "……风好大。"},
+        {"speaker": "陆辰", "expression": "", "text": "嗯。挺冷的。"},
+        {"speaker": "", "expression": "", "text": "但谁都没有走开。"},
+        {"speaker": "林澄", "expression": "smile", "text": "下学期……你还会来帮忙吧？"},
+        {"speaker": "", "expression": "", "text": "她的声音被风吹散了一半。但你听到了。"},
+        {"speaker": "", "expression": "", "text": "【冬夜天台 · 围巾】"}
+      ]
+    }
+  },
+
+  "evt_lin_ch5_normal": {
+    "title": "走廊里的鞠躬",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "学期最后一天。社团楼的走廊比平时安静了很多。"},
+      {"speaker": "", "expression": "", "text": "你碰到了林澄。她正在摘公告板上的旧海报。"},
+      {"speaker": "", "expression": "", "text": "看到你时，她停了手。阳光透过走廊的窗户，把她的轮廓照得很温柔。"},
+      {"speaker": "林澄", "expression": "smile", "text": "谢谢你这学期帮了很多忙。"},
+      {"speaker": "", "expression": "", "text": "她认真地鞠了一躬。午后的光影在走廊里缓缓流动。"},
+      {"speaker": "", "expression": "", "text": "公告板上还贴着你们一起做的文化祭海报。"},
+      {"speaker": "陆辰", "expression": "", "text": "下学期见。"},
+      {"speaker": "林澄", "expression": "smile", "text": "嗯。下学期见。"},
+      {"speaker": "", "expression": "", "text": "【走廊里的鞠躬】"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_lin_ch5_miss": {
+    "title": "未送出的围巾",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "学期最后一天的夜晚。"},
+      {"speaker": "", "expression": "", "text": "你站在校门口，看到林澄的背影走向路灯下。"},
+      {"speaker": "", "expression": "", "text": "你想叫住她。嘴巴张了张——最终还是没有发出声音。"},
+      {"speaker": "", "expression": "", "text": "她走了几步。似乎犹豫了一下。"},
+      {"speaker": "", "expression": "", "text": "但最终头也不回地消失在夜色里。"},
+      {"speaker": "", "expression": "", "text": "银杏叶在路灯下翻飞。你把手里一直没有送出去的东西放回了口袋。"},
+      {"speaker": "", "expression": "", "text": "也许下一个学期，一切会不一样。"},
+      {"speaker": "", "expression": "", "text": "……但你知道，有些时刻，错过就是错过了。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_ch1_1": {
+    "title": "教学楼前的快门声",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "放学后的教学楼前。夕阳把一切都染成了金色。"},
+      {"speaker": "", "expression": "", "text": "你被一阵"咔嚓"声吸引了脚步——"},
+      {"speaker": "", "expression": "", "text": "一个银灰色长发的女生正半蹲着。她把相机镜头对准了西沉的太阳。"},
+      {"speaker": "", "expression": "", "text": "夕阳的光在她的长发上流淌，像是液态的金属。"},
+      {"speaker": "", "expression": "", "text": "她发现你靠近了——毫不犹豫地把镜头转向了你。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你下意识地配合了。没有摆什么特别的姿势，只是自然地站在那里。"},
+        {"speaker": "", "expression": "", "text": "咔嚓。"},
+        {"speaker": "", "expression": "", "text": "她放下相机。嘴角翘了一下——很快又恢复了面无表情。"},
+        {"speaker": "雪纪", "expression": "slight_smile", "text": "不错，光刚好。"},
+        {"speaker": "", "expression": "", "text": "她低声说着，更像是在自言自语。然后又转身去找别的角度了。"},
+        {"speaker": "", "expression": "", "text": "你站在原地，回味着刚才那个一闪而过的笑容——真的，只有一瞬间。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你本能地举起手挡住了脸。"},
+        {"speaker": "陆辰", "expression": "", "text": "呃……你在拍什么？"},
+        {"speaker": "雪纪", "expression": "default", "text": "光跑了。"},
+        {"speaker": "", "expression": "", "text": "她有些失望地放下相机。说完就转身走了，继续寻找别的拍摄角度。"},
+        {"speaker": "", "expression": "", "text": "你看着她的背影。银灰色的长发在晚风里轻轻飘动。一个有点奇怪的女孩。"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch1_2": {
+    "title": "暗房的红光",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "你想找个安静的地方看书。社团楼二楼的走廊很空。"},
+      {"speaker": "", "expression": "", "text": "一扇没关紧的门引起了你的注意。门缝里透出一种奇异的红色光芒。"},
+      {"speaker": "", "expression": "", "text": "你推开了门——"},
+      {"speaker": "", "expression": "", "text": "一间小小的暗房。红色安全灯下，一切都被笼罩在暗红色的温暖里。"},
+      {"speaker": "", "expression": "", "text": "雪纪正用镊子小心翼翼地夹起一张刚冲好的照片。她头都没抬。"},
+      {"speaker": "雪纪", "expression": "focused", "text": "门关好，别漏光。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你轻手轻脚地把门关好。然后站在角落里，安静地看她操作。"},
+        {"speaker": "", "expression": "", "text": "她的手指很稳。用镊子夹起照片，浸入药水，取出，挂在绳子上。每个动作都精准而流畅。"},
+        {"speaker": "", "expression": "", "text": "你看到了正在显影的那张照片——"},
+        {"speaker": "", "expression": "", "text": "是一个男生的侧脸。在校门口，紫藤花下。"},
+        {"speaker": "", "expression": "", "text": "……是你。第一天到校时的你。"},
+        {"speaker": "", "expression": "", "text": "她发现你在看，但什么也没解释。只是继续冲下一张。"},
+        {"speaker": "", "expression": "", "text": "暗房里只有水流的声音。红灯把一切都染上了秘密的颜色。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "抱歉，走错了。"},
+        {"speaker": "", "expression": "", "text": "你退了出去，小心地关上门。"},
+        {"speaker": "", "expression": "", "text": "走廊里传来她轻轻的叹气声——不知道是松了口气，还是其他什么。"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch2_1": {
+    "title": "摄影社招新（一个人的社团）",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "社团招新周。整个社团楼热闹非凡。"},
+      {"speaker": "", "expression": "", "text": "动漫社的展位前排着长队。轻音部现场演奏吸引了一大群人。棋社的同学在大喊"来下一盘！""},
+      {"speaker": "", "expression": "", "text": "但摄影社的桌子前——冷冷清清。"},
+      {"speaker": "", "expression": "", "text": "只有雪纪一个人坐在那里。面前放着一本手工装订的作品集。"},
+      {"speaker": "", "expression": "", "text": "她翻着自己的照片，似乎并不在意有没有人来。"},
+      {"speaker": "", "expression": "", "text": "或者说——已经习惯了没有人来。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你坐了下来。认真地翻看她的作品集。"},
+        {"speaker": "", "expression": "", "text": "操场上的夕阳。中庭喷泉的水花。校门银杏树的金黄。走廊里一个人的背影。"},
+        {"speaker": "", "expression": "", "text": "每一张都构图精妙，光影流转——像是一个安静的人对世界的独白。"},
+        {"speaker": "陆辰", "expression": "", "text": "我想加入摄影社。"},
+        {"speaker": "", "expression": "", "text": "她的眼睛亮了一下——但马上恢复了平静。"},
+        {"speaker": "雪纪", "expression": "default", "text": "……你确定？就我一个人。"},
+        {"speaker": "陆辰", "expression": "", "text": "那就两个人了。"},
+        {"speaker": "", "expression": "", "text": "她沉默了几秒。然后掏出一张皱巴巴的入社表格——像是已经在口袋里揣了很久。"},
+        {"speaker": "", "expression": "", "text": "你签上名字的时候注意到——她的耳尖微微泛红了。"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你站着翻了翻她的作品集。"},
+        {"speaker": "陆辰", "expression": "", "text": "拍得真好。"},
+        {"speaker": "雪纪", "expression": "blush", "text": "……嗯。"},
+        {"speaker": "", "expression": "", "text": "她低下头。你注意到她的右耳上有一只小小的星形耳钉——在阳光下闪了一下。"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch2_2": {
+    "title": "码头公园的黄昏",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "放学后，雪纪带你来到了学校后门附近的码头公园。"},
+      {"speaker": "雪纪", "expression": "focused", "text": "这里的光在下午四点最好。"},
+      {"speaker": "", "expression": "", "text": "旧木码头在夕阳下泛着金色的光泽。海鸥低低飞过。远处的旧灯塔矗立在海边。"},
+      {"speaker": "", "expression": "", "text": "她开始拍了——海鸥、木栈道、生锈的系船柱、浪花拍在岸边的瞬间。"},
+      {"speaker": "", "expression": "", "text": "然后镜头又转向了你。"},
+      {"speaker": "", "expression": "", "text": "海风把她银灰色的长发吹了起来。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "这一次，你没有躲。"},
+        {"speaker": "", "expression": "", "text": "你直视镜头，微微一笑。"},
+        {"speaker": "", "expression": "", "text": "咔嚓。"},
+        {"speaker": "", "expression": "", "text": "她按下快门后放下相机——脸颊比夕阳还红。"},
+        {"speaker": "雪纪", "expression": "blush", "text": "……刚才那张，不许删。"},
+        {"speaker": "", "expression": "", "text": "不许删？明明是她拍的。你忍不住笑了。"},
+        {"speaker": "", "expression": "", "text": "夕阳把你们俩的影子拉得很长，在木栈道上并排延伸到海面的方向。"},
+        {"speaker": "", "expression": "", "text": "【码头的黄昏】"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你突然伸手——抢过了她的相机。"},
+        {"speaker": "雪纪", "expression": "default", "text": "！"},
+        {"speaker": "", "expression": "", "text": "你反过来对准她按下快门。"},
+        {"speaker": "", "expression": "", "text": "她愣住了。然后——"},
+        {"speaker": "", "expression": "", "text": "笑了。"},
+        {"speaker": "", "expression": "", "text": "那笑声被海风吹散，像是碎成了一片一片的光。那是你第一次听到她笑出声。"},
+        {"speaker": "雪纪", "expression": "smile", "text": "……你拍的，一定很丑。"},
+        {"speaker": "", "expression": "", "text": "但她没有要回相机看。好像不看，就可以假装那张照片里的自己是笑着的。"},
+        {"speaker": "", "expression": "", "text": "【码头的黄昏】"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch2_3": {
+    "title": "教学楼走廊的旧照片",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "帮雪纪整理暗房的时候，你在柜子深处翻到了一张泛黄的照片。"},
+      {"speaker": "", "expression": "", "text": "照片里是两个女生的合影。其中一个明显是年幼的雪纪——发色还是深褐色的，笑得很开心。"},
+      {"speaker": "", "expression": "", "text": "另一个女孩扎着马尾，搂着她的肩膀，对着镜头比V。"},
+      {"speaker": "", "expression": "", "text": "雪纪看到这张照片后，整个人安静了下来。"},
+      {"speaker": "", "expression": "", "text": "她轻轻把照片拿了回去。"},
+      {"speaker": "雪纪", "expression": "default", "text": "那是以前的事了。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你没有追问。"},
+        {"speaker": "陆辰", "expression": "", "text": "你小时候也很可爱。"},
+        {"speaker": "", "expression": "", "text": "她别过头。你看到了——她的耳尖红了。"},
+        {"speaker": "雪纪", "expression": "blush", "text": "……闭嘴。"},
+        {"speaker": "", "expression": "", "text": "声音比平时小了很多。她把照片小心地夹进了一本旧相册的最后一页。"},
+        {"speaker": "", "expression": "", "text": "那个相册的封面上，有两个歪歪扭扭的手写字：「我们」。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "那是谁？"},
+        {"speaker": "", "expression": "", "text": "她摇了摇头，没有回答。"},
+        {"speaker": "", "expression": "", "text": "把照片小心地夹进了一本旧相册的最后一页。你注意到她夹照片的手指微微用力。"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch3_1": {
+    "title": "小唯的消息",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "放学后你来到暗房。雪纪坐在桌前，手机屏幕的光照在她脸上。"},
+      {"speaker": "", "expression": "", "text": "她看到手机上的某条消息后，整个人安静得异常。"},
+      {"speaker": "陆辰", "expression": "", "text": "怎么了？"},
+      {"speaker": "雪纪", "expression": "default", "text": "小唯要来学校拿东西。"},
+      {"speaker": "", "expression": "", "text": "她的语气很平淡。平淡到不正常。"},
+      {"speaker": "", "expression": "", "text": "你后来从其他同学那里了解到——小唯是摄影社之前的社员，也是雪纪在学校唯一的朋友。"},
+      {"speaker": "", "expression": "", "text": "但去年，小唯突然退社了。没有人知道具体原因。"},
+      {"speaker": "", "expression": "", "text": "你注意到——雪纪那天下午再也没有拿起过相机。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_ch3_2": {
+    "title": "暗房门前的争吵",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "你到社团楼时——听到暗房里有争吵声。"},
+      {"speaker": "小唯", "expression": "default", "text": "你总是这样！只活在镜头后面！"},
+      {"speaker": "小唯", "expression": "default", "text": "我受不了了才走的！你知不知道？"},
+      {"speaker": "", "expression": "", "text": "暗房的门猛地打开。一个扎马尾的女生冲了出来——和你擦肩而过。"},
+      {"speaker": "", "expression": "", "text": "她的眼角是湿的。"},
+      {"speaker": "", "expression": "", "text": "你推开暗房的门——"},
+      {"speaker": "", "expression": "", "text": "雪纪坐在地上。旁边散落着几张照片。"},
+      {"speaker": "", "expression": "", "text": "她没有哭。但眼神比任何时候都空洞。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你没有说话。坐到了她旁边。"},
+        {"speaker": "", "expression": "", "text": "然后一张一张，安静地帮她捡起散落的照片。"},
+        {"speaker": "", "expression": "", "text": "全是小唯和雪纪的合影。操场上、暗房里、码头边。两个女孩笑得灿烂的旧时光。"},
+        {"speaker": "", "expression": "", "text": "你把照片整理好，递给她。"},
+        {"speaker": "", "expression": "", "text": "她接过去的时候——手指轻轻碰了一下你的指尖。"},
+        {"speaker": "", "expression": "", "text": "没有说话。但没有缩回手。"},
+        {"speaker": "", "expression": "", "text": "暗房的红灯一明一灭。你们就这样坐着，直到天黑。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "需不需要聊聊？"},
+        {"speaker": "雪纪", "expression": "blank", "text": "我想一个人待着。"},
+        {"speaker": "", "expression": "", "text": "你退出暗房，轻轻关上了门。"},
+        {"speaker": "", "expression": "", "text": "走廊很安静。你靠在门边，直到确认里面没有任何声响后才离开。"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch3_3": {
+    "title": "未冲洗的胶卷",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "雪纪好几天没有出现在社团楼了。"},
+      {"speaker": "", "expression": "", "text": "你独自去暗房——门没锁。推开后，空气里有一种久未使用的寂静。"},
+      {"speaker": "", "expression": "", "text": "桌子上放着一卷胶卷。上面用马克笔标注了一个日期——去年的。"},
+      {"speaker": "", "expression": "", "text": "小唯退社前的最后一天。"},
+      {"speaker": "", "expression": "", "text": "雪纪一直没有冲洗它。"},
+      {"speaker": "", "expression": "", "text": "胶卷旁边放着一张字条——"},
+      {"speaker": "雪纪", "expression": "", "text": "【如果我不在，帮我锁门。】"},
+      {"speaker": "", "expression": "", "text": "你小心地把胶卷放回原位。帮她锁好了门。"},
+      {"speaker": "", "expression": "", "text": "走出社团楼时天已经暗了。明天，你决定去她可能在的地方找她。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_ch4_1": {
+    "title": "重新出现",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "你按直觉去了码头公园。"},
+      {"speaker": "", "expression": "", "text": "她在那里。坐在长椅上。"},
+      {"speaker": "", "expression": "", "text": "相机放在旁边——没有在拍照。"},
+      {"speaker": "", "expression": "", "text": "海风吹起她银灰色的长发。远处的海面波光粼粼。"},
+      {"speaker": "", "expression": "", "text": "你在她旁边坐下。什么也没说。"},
+      {"speaker": "", "expression": "", "text": "海浪声一下一下地拍打着木栈道。不知道过了多久——"},
+      {"speaker": "雪纪", "expression": "blank", "text": "小唯说得对。"},
+      {"speaker": "雪纪", "expression": "blank", "text": "我一直躲在镜头后面。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "陆辰", "expression": "", "text": "那就试试放下相机看看？"},
+        {"speaker": "", "expression": "", "text": "你伸出手，在她眼前遮了一下——然后移开。"},
+        {"speaker": "", "expression": "", "text": "她眨了眨眼。"},
+        {"speaker": "", "expression": "", "text": "没有镜头的阻隔，她第一次直视你的脸超过三秒钟。"},
+        {"speaker": "雪纪", "expression": "blush", "text": "……原来你的眼睛是这个颜色。"},
+        {"speaker": "", "expression": "", "text": "她小声说。然后迅速别过头去。"},
+        {"speaker": "", "expression": "", "text": "但你看到了——她的嘴角，微微翘了起来。"}
+      ],
+      "1": [
+        {"speaker": "陆辰", "expression": "", "text": "但正是因为你的眼睛，才能看到那些别人忽略的东西。"},
+        {"speaker": "", "expression": "", "text": "她低下头，手指无意识地摩挲着相机背带。"},
+        {"speaker": "雪纪", "expression": "slight_smile", "text": "……你是第一个这么说的。"},
+        {"speaker": "", "expression": "", "text": "海风吹过。长椅上的两个人，保持着刚好的距离。"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch4_2": {
+    "title": "一起冲洗那卷胶片",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "夜晚的社团楼几乎没有人了。只有暗房的灯还亮着。"},
+      {"speaker": "", "expression": "", "text": "雪纪站在暗房门前。手里拿着那卷搁了一年的胶卷。"},
+      {"speaker": "雪纪", "expression": "default", "text": "我决定冲洗它了。"},
+      {"speaker": "雪纪", "expression": "default", "text": "但……一个人的话，我怕自己又逃走。"},
+      {"speaker": "", "expression": "", "text": "她看着你。那是一种请求——不是用语言，而是用眼神。"},
+      {"speaker": "陆辰", "expression": "", "text": "我陪你。"},
+      {"speaker": "", "expression": "", "text": "暗房的红灯亮了。药水准备好了。胶卷被小心翼翼地放进显影液。"},
+      {"speaker": "", "expression": "", "text": "照片一张一张地浮现——"},
+      {"speaker": "", "expression": "", "text": "小唯和雪纪在操场上笑闹。社团活动日布展。两个人在码头公园拍夕阳。"},
+      {"speaker": "", "expression": "", "text": "最后一张照片慢慢浮现——"},
+      {"speaker": "", "expression": "", "text": "是小唯偷拍的雪纪。笑得比任何时候都灿烂。"},
+      {"speaker": "雪纪", "expression": "cry", "text": "原来她也拍过我啊。"},
+      {"speaker": "", "expression": "", "text": "泪无声地落了下来。你什么都没说，只是把手放在了她的手背上。"},
+      {"speaker": "", "expression": "", "text": "暗房的红灯一明一灭。窗外传来远处的海浪声。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_ch5_good": {
+    "title": "灯塔上的告白",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "课桌里多了一样东西。"},
+      {"speaker": "", "expression": "", "text": "一张照片——你从未注意到的、她在某个瞬间拍下的你的侧脸。"},
+      {"speaker": "", "expression": "", "text": "照片背面写着一行小字："},
+      {"speaker": "雪纪", "expression": "", "text": "【旧灯塔，今晚。】"},
+      {"speaker": "", "expression": "", "text": "——"},
+      {"speaker": "", "expression": "", "text": "灯塔的石阶很旧了。你一步一步爬到顶层。"},
+      {"speaker": "", "expression": "", "text": "推开最后一扇门——"},
+      {"speaker": "", "expression": "", "text": "海风扑面而来。满天星光。海面上反射着月亮和远处城市的灯火。"},
+      {"speaker": "", "expression": "", "text": "雪纪站在栏杆旁。银灰色的长发在夜风里飞舞。"},
+      {"speaker": "", "expression": "", "text": "她转过身，把相机递给你。"},
+      {"speaker": "雪纪", "expression": "default", "text": "帮我拍一张。"},
+      {"speaker": "", "expression": "", "text": "然后——她做了一个从未做过的事。"},
+      {"speaker": "", "expression": "", "text": "面对镜头。笑了。"}
+    ],
+    "choice_results": {
+      "0": [
+        {"speaker": "", "expression": "", "text": "你按下快门。"},
+        {"speaker": "", "expression": "", "text": "然后——放下相机。走到她面前。"},
+        {"speaker": "", "expression": "", "text": "海风在你们之间穿过。她没有举起相机。只是看着你。"},
+        {"speaker": "雪纪", "expression": "smile", "text": "我一直在找一种光。"},
+        {"speaker": "", "expression": "", "text": "她的声音轻得几乎被海浪盖过。"},
+        {"speaker": "雪纪", "expression": "smile", "text": "后来发现……是你身上的。"},
+        {"speaker": "", "expression": "", "text": "满天星光倒映在海面上。也倒映在她的眼睛里。"},
+        {"speaker": "", "expression": "", "text": "你伸出手。她握住了。"},
+        {"speaker": "", "expression": "", "text": "相机挂在她的脖子上，轻轻晃动。从今以后，镜头两端的世界——终于合而为一了。"},
+        {"speaker": "", "expression": "", "text": "【灯塔星空 · 面对面】"}
+      ],
+      "1": [
+        {"speaker": "", "expression": "", "text": "你按下快门。看了看照片。"},
+        {"speaker": "陆辰", "expression": "", "text": "这是我拍过最好的照片。"},
+        {"speaker": "", "expression": "", "text": "她接过相机看了看照片，沉默了很久。"},
+        {"speaker": "", "expression": "", "text": "然后她把相机挂回脖子上。"},
+        {"speaker": "雪纪", "expression": "slight_smile", "text": "以后也帮我拍。"},
+        {"speaker": "", "expression": "", "text": "这不是请求。更像是一个约定。"},
+        {"speaker": "", "expression": "", "text": "海风温柔得像一声叹息。"},
+        {"speaker": "", "expression": "", "text": "【灯塔星空 · 一张照片】"}
+      ]
+    }
+  },
+
+  "evt_yuki_ch5_normal": {
+    "title": "展览上的你",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "学期末。摄影社的小型展览。"},
+      {"speaker": "", "expression": "", "text": "社团楼的走廊被布置成了一个小小的展厅。只有几个人来看。"},
+      {"speaker": "", "expression": "", "text": "你走过一面面墙——风景、建筑、校园。然后走到最后一面墙。"},
+      {"speaker": "", "expression": "", "text": "整面墙都是你的照片。"},
+      {"speaker": "", "expression": "", "text": "不同角度。不同时段。不同表情。在操场、在教学楼、在码头、在暗房。"},
+      {"speaker": "", "expression": "", "text": "旁边的标签上写着展览名——"},
+      {"speaker": "", "expression": "", "text": "「心跳」。"},
+      {"speaker": "", "expression": "", "text": "雪纪站在你身后。"},
+      {"speaker": "雪纪", "expression": "slight_smile", "text": "谢谢你当我的模特。"},
+      {"speaker": "", "expression": "", "text": "你从来不知道——原来自己被人这样认真地看过。"},
+      {"speaker": "", "expression": "", "text": "【展览墙 · 心跳】"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_ch5_miss": {
+    "title": "消失的暗房",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "学期最后一天。你去社团楼。"},
+      {"speaker": "", "expression": "", "text": "暗房的门锁着。"},
+      {"speaker": "", "expression": "", "text": "透过门缝能看到里面已经收拾干净了。药水瓶、相纸、晾衣绳——全部不见了。"},
+      {"speaker": "", "expression": "", "text": "桌上只留了一个信封。"},
+      {"speaker": "", "expression": "", "text": "你打开——里面是一张照片。"},
+      {"speaker": "", "expression": "", "text": "你第一天来学校时的侧脸。紫藤花下。"},
+      {"speaker": "", "expression": "", "text": "照片背面什么也没写。"},
+      {"speaker": "", "expression": "", "text": "暗房里再也没有红光亮起。"},
+      {"speaker": "", "expression": "", "text": "你捏着照片走出社团楼。海风从远处吹来，带着盐和记忆的味道。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_lin_daily_duty": {
+    "title": "值日检查",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "早晨的校门口。林澄拿着签到表站在那里。"},
+      {"speaker": "", "expression": "", "text": "你经过时她抬起头——"},
+      {"speaker": "林澄", "expression": "default", "text": "早。"},
+      {"speaker": "", "expression": "", "text": "简短的一个字。但嘴角似乎微微上扬了一点。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_lin_daily_vending": {
+    "title": "贩卖机前",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "林澄在自动贩卖机前犹豫着。"},
+      {"speaker": "", "expression": "", "text": "你经过的时候，她迅速按了一罐黑咖啡。"},
+      {"speaker": "", "expression": "", "text": "但你注意到——她的手指在草莓牛奶上悬了很久。"},
+      {"speaker": "", "expression": "", "text": "她抱着黑咖啡走了。你偷偷笑了——原来她喜欢甜的。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_lin_daily_overtime": {
+    "title": "学生会加班",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "学生会办公室的灯还亮着。你推开门。"},
+      {"speaker": "林澄", "expression": "default", "text": "又来了啊。"},
+      {"speaker": "", "expression": "", "text": "语气里有一丝说不清的东西。可能是无奈。也可能是欣慰。"},
+      {"speaker": "", "expression": "", "text": "她把一叠需要盖章的表格推过来。"},
+      {"speaker": "林澄", "expression": "smile", "text": "那……这些麻烦你了。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_lin_daily_glasses": {
+    "title": "擦眼镜",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "中庭的早晨。林澄摘下眼镜在擦。"},
+      {"speaker": "", "expression": "", "text": "没有了镜片的阻隔，她看到你走近时眯着眼——"},
+      {"speaker": "林澄", "expression": "shy", "text": "是陆辰吗？"},
+      {"speaker": "", "expression": "", "text": "声音比平时柔软得多。她匆忙戴上眼镜，好像被看到了什么不该被看到的样子。"},
+      {"speaker": "林澄", "expression": "default", "text": "没什么。走吧。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_lin_daily_umbrella": {
+    "title": "共伞",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "突然下起了雨。校门口的人群纷纷找地方避雨。"},
+      {"speaker": "", "expression": "", "text": "林澄撑着伞站在门口。看到没带伞的你——犹豫了两秒。"},
+      {"speaker": "", "expression": "", "text": "然后把伞递出一半。"},
+      {"speaker": "", "expression": "", "text": "伞不大。肩膀难免碰在一起。她的脸侧过去不看你——但没有拉开距离。"},
+      {"speaker": "", "expression": "", "text": "雨滴落在伞面上，声音清脆得像小鼓。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_daily_spot": {
+    "title": "寻找拍摄点",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "你在中庭看到雪纪蹲在一个不可思议的角度拍东西。"},
+      {"speaker": "", "expression": "", "text": "走近一看——是一只趴在暖气管上晒太阳的橘猫。"},
+      {"speaker": "雪纪", "expression": "focused", "text": "……等一下，这个光不错。"},
+      {"speaker": "", "expression": "", "text": "咔嚓。橘猫打了个哈欠。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_daily_cat": {
+    "title": "花坛的猫",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "早上的中庭很安静。雪纪在花坛边给一只黑白花猫拍照。"},
+      {"speaker": "", "expression": "", "text": "猫咪似乎很配合，摆出各种慵懒的姿势。"},
+      {"speaker": "", "expression": "", "text": "她把相机屏幕转过来给你看。猫的毛在晨光里像镶了金边。"},
+      {"speaker": "雪纪", "expression": "slight_smile", "text": "这只叫阿福。每天都来。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_daily_develop": {
+    "title": "帮忙计时",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "暗房里。雪纪正在冲洗照片。"},
+      {"speaker": "", "expression": "", "text": "看到你来了，她指了指计时器。"},
+      {"speaker": "雪纪", "expression": "focused", "text": "帮我看着时间。90秒。"},
+      {"speaker": "", "expression": "", "text": "红灯下，照片在药水里慢慢显影。这次是一张校园风景——阳光穿过银杏叶的间隙洒在走廊上。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_daily_stargazing": {
+    "title": "拍星轨",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "天台上。雪纪把相机架在三脚架上。"},
+      {"speaker": "雪纪", "expression": "default", "text": "长曝光拍星轨。大概要等二十分钟。"},
+      {"speaker": "", "expression": "", "text": "她坐在地上仰望夜空。你在她旁边坐下。"},
+      {"speaker": "", "expression": "", "text": "二十分钟的安静。她时不时指出某颗星星的名字。"},
+      {"speaker": "", "expression": "", "text": "你发现她知道的比说出来的多得多。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_yuki_daily_print": {
+    "title": "递照片",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "雪纪拿着一张洗好的照片朝你走来。"},
+      {"speaker": "雪纪", "expression": "default", "text": "给你的。"},
+      {"speaker": "", "expression": "", "text": "照片里是你某天在操场边看书时的侧影。光线很美。"},
+      {"speaker": "雪纪", "expression": "blush", "text": "……随便拍的而已。"},
+      {"speaker": "", "expression": "", "text": "她转身走了。但你注意到照片的边角被裁剪得非常精细——一点也不随便。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_general_sunset": {
+    "title": "天台的夕阳",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "天台上。夕阳把整个校园染成了橘红色。"},
+      {"speaker": "", "expression": "", "text": "远处的海面上铺着一条金色的光带。风里有青草和潮湿的味道。"},
+      {"speaker": "", "expression": "", "text": "你靠在栏杆上，看着太阳一点点沉入海平线。"},
+      {"speaker": "", "expression": "", "text": "放学的钟声从远处传来，像是另一个世界的声音。"},
+      {"speaker": "", "expression": "", "text": "这个瞬间，转学的不安感似乎消散了一些。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_general_rain": {
+    "title": "突然的雨",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "突然下起雨来。"},
+      {"speaker": "", "expression": "", "text": "校门口的银杏树叶被雨打得沙沙响。同学们纷纷加快脚步。"},
+      {"speaker": "", "expression": "", "text": "空气里弥漫着泥土和湿草的清新气息。"},
+      {"speaker": "", "expression": "", "text": "雨滴落在水洼上弹出一圈圈涟漪。这种时候，时间好像慢了下来。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_general_bell": {
+    "title": "上课铃声",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "叮——铃铃铃——"},
+      {"speaker": "", "expression": "", "text": "上课铃声从教学楼传出来。你加快脚步穿过人流。"},
+      {"speaker": "", "expression": "", "text": "走廊里的光影在脚下飞速后退。赶上了。"},
+      {"speaker": "", "expression": "", "text": "坐到座位上才注意到心跳很快——不知道是因为跑步还是其他什么。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_general_canteen": {
+    "title": "食堂靠窗",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "食堂二楼靠窗的角落位竟然空着。"},
+      {"speaker": "", "expression": "", "text": "你端着餐盘坐下来。窗外是整个操场的全景。远处有人在跑步，有人在踢球。"},
+      {"speaker": "", "expression": "", "text": "食堂的咖喱饭味道意外地好。窗外的晚霞把操场染成了温暖的颜色。"},
+      {"speaker": "", "expression": "", "text": "这个学校……好像还不错。"}
+    ],
+    "choice_results": {}
+  },
+
+  "evt_general_breeze": {
+    "title": "码头海风",
+    "pages": [
+      {"speaker": "", "expression": "", "text": "码头公园的长椅上。海风温柔地吹过。"},
+      {"speaker": "", "expression": "", "text": "木栈道尽头有海鸥在低飞。远处的旧灯塔安静地矗立着。"},
+      {"speaker": "", "expression": "", "text": "海浪声节奏平稳，像是大海的呼吸。"},
+      {"speaker": "", "expression": "", "text": "盐味的空气里混着阳光晒过木板的气味。你第一次觉得，这座城市已经开始变得像"自己的"了。"}
+    ],
+    "choice_results": {}
+  }
+}

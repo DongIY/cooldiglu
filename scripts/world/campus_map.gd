@@ -67,10 +67,26 @@ func _get_points() -> Array:
 	return points
 
 func _draw() -> void:
+	# --- Background ---
 	draw_rect(Rect2(40, 60, 1200, 600), Color("#d5e7ff"), true)
+	# --- School buildings upper zone ---
 	draw_rect(Rect2(70, 85, 1160, 120), Color("#f2f6ff"), true)
-	draw_rect(Rect2(120, 250, 420, 260), Color("#b9d6ff"), true)
-	draw_rect(Rect2(660, 240, 460, 290), Color("#c4ebc8"), true)
+	# --- Left campus zone (gate / track) ---
+	draw_rect(Rect2(120, 250, 420, 200), Color("#b9d6ff"), true)
+	# --- Right campus zone (courtyard) ---
+	draw_rect(Rect2(660, 240, 460, 200), Color("#c4ebc8"), true)
+	# --- Rooftop zone ---
 	draw_rect(Rect2(920, 95, 200, 90), Color("#d8d1ff"), true)
-	draw_line(Vector2(120, 190), Vector2(1120, 190), Color("#ffffff"), 10.0)
-	draw_line(Vector2(610, 190), Vector2(610, 560), Color("#ffffff"), 10.0)
+	# --- Club building zone ---
+	draw_rect(Rect2(480, 420, 200, 100), Color("#e8d5f5"), true)
+	# --- Canteen zone ---
+	draw_rect(Rect2(760, 480, 180, 90), Color("#fce4b8"), true)
+	# --- Seaside promenade separator ---
+	draw_line(Vector2(80, 540), Vector2(1200, 540), Color("#7ab4d6"), 3.0)
+	# --- Pier park zone ---
+	draw_rect(Rect2(120, 550, 220, 90), Color("#b8dfe6"), true)
+	# --- Lighthouse zone ---
+	draw_rect(Rect2(1020, 520, 160, 120), Color("#c8bfdb"), true)
+	# --- Main roads ---
+	draw_line(Vector2(120, 190), Vector2(1122, 190), Color("#ffffff"), 10.0)
+	draw_line(Vector2(610, 190), Vector2(610, 540), Color("#ffffff"), 10.0)

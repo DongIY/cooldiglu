@@ -1,172 +1,1305 @@
 [
   {
-    "id": "evt_school_gate_lin_intro",
+    "id": "evt_lin_ch1_1",
     "point_id": "school_gate",
     "time_slot": "morning",
+    "chapter": 1,
+    "act": "偶遇",
+    "route": "lin",
+    "day_range": [1, 3],
     "speaker": "林澄",
-    "text": "你刚到校门口，就看到抱着活动资料的林澄被风吹乱了纸页。她抬头看了你一眼，像是在犹豫要不要开口求助。",
+    "text": "你第一天到校，校门口的风突然大了起来。林澄抱着一摞活动文件被吹得手忙脚乱，几张纸飞了出去。她皱着眉快步去追，始终没有开口找人帮忙。",
     "conditions": {
       "required_flags": [],
-      "blocked_flags": ["lin_intro_done"],
+      "blocked_flags": ["lin_ch1_helped", "lin_ch1_greeted"],
       "affection_at_least": {},
       "once": true
     },
     "choices": [
       {
-        "text": "过去帮她按住资料",
-        "affection_delta": {"lin": 2},
-        "set_flags": ["lin_intro_done"],
-        "mark_visited": true,
-        "result_text": "林澄对你的印象变好了，时间推进到了放学后。",
-        "advance_time": true
-      },
-      {
-        "text": "笑着和她打个招呼",
-        "affection_delta": {"lin": 1},
-        "set_flags": ["lin_intro_done"],
-        "mark_visited": true,
-        "result_text": "你们正式认识了，时间推进到了放学后。",
-        "advance_time": true
-      }
-    ]
-  },
-  {
-    "id": "evt_teaching_front_yuki_intro",
-    "point_id": "teaching_front",
-    "time_slot": "after_school",
-    "speaker": "雪纪",
-    "text": "教学楼前的光线刚刚好，雪纪正半蹲着找角度拍晚霞。她发现你靠近后，顺手把相机镜头转向你这边。",
-    "conditions": {
-      "required_flags": [],
-      "blocked_flags": ["yuki_intro_done"],
-      "affection_at_least": {},
-      "once": true
-    },
-    "choices": [
-      {
-        "text": "配合她的镜头摆个自然的姿势",
-        "affection_delta": {"yuki": 2},
-        "set_flags": ["yuki_intro_done"],
-        "mark_visited": true,
-        "result_text": "雪纪记住了你的表情，也想再约你一起拍照。",
-        "advance_time": false
-      },
-      {
-        "text": "好奇地问她在拍什么",
-        "affection_delta": {"yuki": 1},
-        "set_flags": ["yuki_intro_done"],
-        "mark_visited": true,
-        "result_text": "你知道了她常去记录校园光影的习惯。",
-        "advance_time": false
-      }
-    ]
-  },
-  {
-    "id": "evt_track_side_lin_mid",
-    "point_id": "track_side",
-    "time_slot": "after_school",
-    "speaker": "林澄",
-    "text": "操场边的人渐渐散去，林澄抱着签到表站在晚风里。她似乎已经习惯你会在这种时候出现，语气也比第一次柔和了许多。",
-    "conditions": {
-      "required_flags": ["lin_intro_done"],
-      "blocked_flags": ["lin_route_mid"],
-      "affection_at_least": {"lin": 1},
-      "once": true
-    },
-    "choices": [
-      {
-        "text": "陪她一起整理社团活动名单",
+        "text": "追上去帮她捡回飞走的文件",
         "affection_delta": {"lin": 3},
-        "set_flags": ["lin_route_mid"],
+        "set_flags": ["lin_ch1_helped"],
         "mark_visited": true,
-        "result_text": "你们并肩忙到天色暗下来，时间推进到了夜晚。",
+        "result_text": "她愣了一下，然后认真地说了句"谢谢"。你注意到她左手腕上那只简洁的银色手表在阳光下闪了一下。",
         "advance_time": true
       },
       {
-        "text": "递给她一罐刚买的热饮",
-        "affection_delta": {"lin": 2},
-        "set_flags": ["lin_route_mid"],
+        "text": "站在原地提醒她有张纸飞到身后了",
+        "affection_delta": {"lin": 1},
+        "set_flags": ["lin_ch1_greeted"],
         "mark_visited": true,
-        "result_text": "林澄明显放松了下来，时间推进到了夜晚。",
+        "result_text": "她点点头，自己去捡了回来。经过你身边时，礼貌地说了声"谢谢提醒"。",
         "advance_time": true
       }
     ]
   },
   {
-    "id": "evt_courtyard_yuki_mid",
-    "point_id": "courtyard",
+    "id": "evt_lin_ch1_2",
+    "point_id": "club_building",
     "time_slot": "after_school",
-    "speaker": "雪纪",
-    "text": "中庭的风铃被风轻轻吹响，雪纪把刚洗出来的试拍照片递给你。画面里有你路过时回头的一瞬，安静得像一段被偷藏起来的心事。",
+    "chapter": 1,
+    "act": "偶遇",
+    "route": "lin",
+    "day_range": [1, 4],
+    "speaker": "林澄",
+    "text": "班主任建议你加入一个社团融入校园生活，你来到社团楼。学生会的门开着，林澄一个人在整理一面巨大的活动公告板。你敲了敲门框。",
     "conditions": {
-      "required_flags": ["yuki_intro_done"],
-      "blocked_flags": ["yuki_route_mid"],
-      "affection_at_least": {"yuki": 1},
+      "required_flags": [],
+      "blocked_flags": ["lin_ch1_visited", "lin_ch1_pin"],
+      "affection_at_least": {},
       "once": true
     },
     "choices": [
       {
-        "text": "认真夸她把光线拍得很好",
-        "affection_delta": {"yuki": 3},
-        "set_flags": ["yuki_route_mid"],
+        "text": "说你是新转来的，想了解学生会",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_ch1_visited"],
         "mark_visited": true,
-        "result_text": "雪纪笑着把照片收好，时间推进到了夜晚。",
-        "advance_time": true
+        "result_text": "她简短但认真地介绍了学生会的工作。你发现她说到活动筹备时眼睛会微微发亮。",
+        "advance_time": false
       },
       {
-        "text": "提议下次去更高的地方看夜景",
-        "affection_delta": {"yuki": 2},
-        "set_flags": ["yuki_route_mid"],
-        "mark_visited": true,
-        "result_text": "她认真记下了你的提议，时间推进到了夜晚。",
-        "advance_time": true
-      }
-    ]
-  },
-  {
-    "id": "evt_rooftop_lin_final",
-    "point_id": "rooftop",
-    "time_slot": "night",
-    "speaker": "林澄",
-    "text": "夜色落在天台栏杆上，校园里只剩稀疏的灯。林澄把最后一页资料合上，小声说如果今天没有你陪着，她大概会一个人忙到很晚。",
-    "conditions": {
-      "required_flags": ["lin_route_mid"],
-      "blocked_flags": ["lin_route_complete"],
-      "affection_at_least": {"lin": 4},
-      "once": true
-    },
-    "choices": [
-      {
-        "text": "告诉她以后也可以继续依赖你",
+        "text": "帮她把掉下来的图钉递过去",
         "affection_delta": {"lin": 2},
-        "set_flags": ["lin_route_complete"],
+        "set_flags": ["lin_ch1_pin"],
         "mark_visited": true,
-        "unlock_cg": "cg_lin_rooftop",
-        "result_text": "你解锁了林澄的夜晚天台回忆。",
+        "result_text": "她终于停下来看了你一眼，说了句"你是那个新转来的？"语气里有一点意外的柔软。",
         "advance_time": false
       }
     ]
   },
   {
-    "id": "evt_school_gate_yuki_final",
+    "id": "evt_lin_ch2_1",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 2,
+    "act": "靠近",
+    "route": "lin",
+    "day_range": [4, 7],
+    "speaker": "林澄",
+    "text": "文化祭将至，学生会忙得不可开交。你看到林澄独自搬着几箱布展材料上楼梯，明显有些吃力。额头上渗着细密的汗珠，但她一声不吭。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ch2_carry", "lin_ch2_ask"],
+      "affection_at_least": {},
+      "flag_any": ["lin_ch1_visited", "lin_ch1_helped", "lin_ch1_pin", "lin_ch1_greeted"],
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "直接过去扛起最重的那箱",
+        "affection_delta": {"lin": 3},
+        "set_flags": ["lin_ch2_carry"],
+        "mark_visited": true,
+        "result_text": "她犹豫了一下，小声说了句"……谢谢"。你注意到她的手指因为搬了太久而发红。",
+        "advance_time": true
+      },
+      {
+        "text": "问她要不要找其他人帮忙",
+        "affection_delta": {"lin": 1},
+        "set_flags": ["lin_ch2_ask"],
+        "mark_visited": true,
+        "result_text": "她摇头说"马上就好了"，然后咬着牙又搬起一箱。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch2_2",
+    "point_id": "rooftop",
+    "time_slot": "after_school",
+    "chapter": 2,
+    "act": "靠近",
+    "route": "lin",
+    "day_range": [5, 9],
+    "speaker": "林澄",
+    "text": "你发现天台上有人——林澄坐在角落，面前放着一个便当盒。她看到你时明显慌了一下，把便当盒往身后藏了藏。银框眼镜后面的眼神有些躲闪。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ch2_cake_secret", "lin_ch2_cake_miss"],
+      "affection_at_least": {"lin": 3},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "假装没看到，在旁边坐下看风景",
+        "affection_delta": {"lin": 3},
+        "set_flags": ["lin_ch2_cake_secret"],
+        "mark_visited": true,
+        "result_text": "过了一会儿她主动把便当盒拿出来——里面是一块草莓蛋糕。"别跟别人说。"她小声说，脸红到耳根。",
+        "advance_time": false
+      },
+      {
+        "text": "好奇地问她在吃什么",
+        "affection_delta": {"lin": 1},
+        "set_flags": ["lin_ch2_cake_miss"],
+        "mark_visited": true,
+        "result_text": "她红着脸说"没什么"，把盒子收了起来。你总觉得闻到了草莓的甜香。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch2_3",
+    "point_id": "track_side",
+    "time_slot": "night",
+    "chapter": 2,
+    "act": "靠近",
+    "route": "lin",
+    "day_range": [7, 11],
+    "speaker": "林澄",
+    "text": "天色已暗，操场边只剩路灯。林澄抱着一摞签到表从社团楼方向走过来，脚步有些疲惫。她没注意到你。路灯把她的影子拉得很长。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ch2_walk_together", "lin_ch2_noticed"],
+      "affection_at_least": {"lin": 5},
+      "flag_any": ["lin_ch2_carry"],
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "走上去说"我送你到校门口吧"",
+        "affection_delta": {"lin": 3},
+        "set_flags": ["lin_ch2_walk_together"],
+        "mark_visited": true,
+        "result_text": "她想拒绝，嘴唇动了动，但终于说了句"……那就麻烦你了"。一路上她走得比平时慢了很多。",
+        "advance_time": true
+      },
+      {
+        "text": "远远跟着确认她安全出校门",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_ch2_noticed"],
+        "mark_visited": true,
+        "result_text": "第二天早上她叫住你："昨晚……好像看到你了。"语气里分不清是质问还是感谢。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch3_1",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 3,
+    "act": "波澜",
+    "route": "lin",
+    "day_range": [10, 14],
+    "speaker": "苏逸",
+    "text": "学生会长苏逸——一个温和的高三男生——在走廊拦住你。"你就是最近常帮林澄忙的那个转学生吧？"他笑了笑，"我下学期就毕业了，学生会的事都要交给她。她这个人，不到倒下都不会说累的。"",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ch3_promise", "lin_ch3_aware"],
+      "affection_at_least": {"lin": 6},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "认真地答应苏逸",
+        "affection_delta": {},
+        "set_flags": ["lin_ch3_promise"],
+        "mark_visited": true,
+        "result_text": "苏逸拍了拍你的肩："拜托你了。"你觉得这份承诺沉甸甸的。",
+        "advance_time": false
+      },
+      {
+        "text": "说"她比你想的坚强，但我也会注意的"",
+        "affection_delta": {"lin": 1},
+        "set_flags": ["lin_ch3_aware"],
+        "mark_visited": true,
+        "result_text": "苏逸看了你一会儿，笑着说："看来她找到了靠得住的人。"",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch3_2",
+    "point_id": "rooftop",
+    "time_slot": "after_school",
+    "chapter": 3,
+    "act": "波澜",
+    "route": "lin",
+    "day_range": [12, 16],
+    "speaker": "林澄",
+    "text": "你想帮林澄分担文化祭的布展工作，来到天台。但她看到你后突然态度冷淡地说"你不用管，我自己能做。"然后把门关了。你站在天台门前，听到门里传来很轻的叹气声。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ch3_waited", "lin_ch3_gave_space"],
+      "affection_at_least": {"lin": 7},
+      "flag_any": ["lin_ch3_promise", "lin_ch3_aware"],
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "在门外说"我就在这等你，不急"",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_ch3_waited"],
+        "mark_visited": true,
+        "result_text": "过了很久，门吱呀一声打开了。她没看你，但轻声说了句"……进来吧"。她的眼眶有点红。",
+        "advance_time": true
+      },
+      {
+        "text": "默默离开，给她空间",
+        "affection_delta": {"lin": 0},
+        "set_flags": ["lin_ch3_gave_space"],
+        "mark_visited": true,
+        "result_text": "你转身走下楼梯。走到一半，听到天台那边似乎有什么东西掉在地上的声音。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch3_3",
     "point_id": "school_gate",
     "time_slot": "night",
-    "speaker": "雪纪",
-    "text": "校门外的路灯把地面映成温柔的金色，雪纪把相机挂回肩上，轻轻说今天最想留下来的并不是风景，而是和你一起走出校门的这一刻。",
+    "chapter": 3,
+    "act": "波澜",
+    "route": "lin",
+    "day_range": [14, 18],
+    "speaker": "林澄",
+    "text": "你在校门附近等了一会儿，发现林澄还没出校门。天已经很晚了。远处传来她和手机里的声音——像是在和姐姐通话，语气里有在你面前从未展现过的疲惫和委屈。"姐，我没事……真的没事……"",
     "conditions": {
-      "required_flags": ["yuki_route_mid"],
-      "blocked_flags": ["yuki_route_complete"],
+      "required_flags": ["lin_ch3_waited"],
+      "blocked_flags": ["lin_ch3_cocoa", "lin_ch3_pretend"],
+      "affection_at_least": {"lin": 8},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "等她挂了电话，递给她一罐热可可",
+        "affection_delta": {"lin": 4},
+        "set_flags": ["lin_ch3_cocoa"],
+        "mark_visited": true,
+        "result_text": "她接过去的手在微微发抖。很久之后她才开口："你怎么知道我在这……"声音里带着鼻音。",
+        "advance_time": true
+      },
+      {
+        "text": "装作刚到，若无其事地打招呼",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_ch3_pretend"],
+        "mark_visited": true,
+        "result_text": "她勉强笑了笑，把手机收起来。"你怎么还没走？"语气故作轻松，但眼角还是红的。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch4_1",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 4,
+    "act": "破冰",
+    "route": "lin",
+    "day_range": [17, 22],
+    "speaker": "林澄",
+    "text": "文化祭开幕当天。学生会的展区出了问题——物资送错了。林澄咬着唇在电话里协调，声音在控制着不发抖。你看出她快到极限了。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ch4_trust", "lin_ch4_silent_help"],
+      "affection_at_least": {"lin": 10},
+      "flag_any": ["lin_ch3_cocoa", "lin_ch3_pretend"],
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "拿过她的电话说"这里交给我，你先去喝口水"",
+        "affection_delta": {"lin": 4},
+        "set_flags": ["lin_ch4_trust"],
+        "mark_visited": true,
+        "result_text": "她第一次没有拒绝。你处理完电话回头看她，她正低着头，肩膀在微微颤抖。",
+        "advance_time": true
+      },
+      {
+        "text": "默默开始帮忙搬运正确的物资",
+        "affection_delta": {"lin": 3},
+        "set_flags": ["lin_ch4_silent_help"],
+        "mark_visited": true,
+        "result_text": "她挂了电话后发现物资已经被你搬好了一半，嘴唇动了动，最后只说了句"……笨蛋"。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch4_2",
+    "point_id": "track_side",
+    "time_slot": "night",
+    "chapter": 4,
+    "act": "破冰",
+    "route": "lin",
+    "day_range": [19, 24],
+    "speaker": "林澄",
+    "text": "文化祭尾声，操场上放起了烟花。人群里你看到林澄一个人站在看台最高处。走近后发现她眼眶是红的。烟花在她的镜片上一明一灭。",
+    "conditions": {
+      "required_flags": ["lin_ch4_trust"],
+      "blocked_flags": ["lin_ch4_confession", "lin_ch4_stay"],
+      "affection_at_least": {"lin": 12},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "什么都不说，在她旁边坐下",
+        "affection_delta": {"lin": 4},
+        "set_flags": ["lin_ch4_confession"],
+        "mark_visited": true,
+        "unlock_cg": "cg_fireworks",
+        "result_text": "很久之后她终于小声说了："……其实有时候，我也想有人帮我。"烟花在身后绽放，她的泪终于落了下来。",
+        "advance_time": false
+      },
+      {
+        "text": "问她还好吗",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_ch4_stay"],
+        "mark_visited": true,
+        "result_text": "她说"嗯，没事"。但没有走开。你们就这样并肩站着，直到烟花全部放完。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch5_good",
+    "point_id": "rooftop",
+    "time_slot": "night",
+    "chapter": 5,
+    "act": "定格",
+    "route": "lin",
+    "day_range": [24, 28],
+    "speaker": "林澄",
+    "text": "初冬的天台很冷。林澄第一次主动给你发了消息——"你能来天台一趟吗"。她背对着你站在栏杆旁，声音很轻："苏逸学长毕业了，姐姐出国了，我一直觉得靠自己就够了。但是……"她转过身，路灯下能看到她眼角有泪光。",
+    "conditions": {
+      "required_flags": ["lin_ch4_confession"],
+      "blocked_flags": ["lin_ending_true", "lin_ending_warm"],
+      "affection_at_least": {"lin": 15},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "走上前握住她的手，说"以后你不用一个人了"",
+        "affection_delta": {"lin": 5},
+        "set_flags": ["lin_ending_true"],
+        "mark_visited": true,
+        "unlock_cg": "cg_lin_rooftop_true",
+        "result_text": "她的手冰凉的，但紧紧回握了你。泪顺着脸颊滑下来，嘴角却弯了。"你啊……"她哭着笑了，"明明我说了不用担心的。"夜空下，两个人的影子终于重叠在一起。",
+        "advance_time": false
+      },
+      {
+        "text": "把围巾解下来围在她脖子上",
+        "affection_delta": {"lin": 3},
+        "set_flags": ["lin_ending_warm"],
+        "mark_visited": true,
+        "unlock_cg": "cg_lin_rooftop_warm",
+        "result_text": "她低下头，手指攥住围巾的一端。风很大，但谁都没有走开。"下学期……你还会来帮忙吧？"她的声音被风吹散了一半。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch5_normal",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 5,
+    "act": "定格",
+    "route": "lin",
+    "day_range": [26, 28],
+    "speaker": "林澄",
+    "text": "学期结束前最后一天，你在社团楼走廊碰到林澄。她正在摘公告板上的旧海报。看到你时停了手。阳光透过走廊的窗户把她的轮廓照得很温柔。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ending_normal", "lin_ending_true", "lin_ending_warm"],
+      "affection_at_least": {"lin": 8},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "和她约好下学期继续一起",
+        "affection_delta": {"lin": 2},
+        "set_flags": ["lin_ending_normal"],
+        "mark_visited": true,
+        "unlock_cg": "cg_lin_corridor",
+        "result_text": ""谢谢你这学期帮了很多忙。"她认真地鞠了一躬。午后的光影在走廊里缓缓流动，公告板上还贴着你们一起做的文化祭海报。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_ch5_miss",
+    "point_id": "school_gate",
+    "time_slot": "night",
+    "chapter": 5,
+    "act": "定格",
+    "route": "lin",
+    "day_range": [27, 28],
+    "speaker": "",
+    "text": "学期最后一天的夜晚，你在校门口看到林澄的背影走向路灯下。你想叫住她，但嘴巴张了张最终没有出声。她走了几步，似乎犹豫了一下，但最终头也不回地消失在夜色里。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["lin_ending_miss", "lin_ending_true", "lin_ending_warm", "lin_ending_normal"],
+      "affection_at_least": {"lin": 1},
+      "affection_below": {"lin": 8},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "目送她离开",
+        "affection_delta": {},
+        "set_flags": ["lin_ending_miss"],
+        "mark_visited": true,
+        "result_text": "银杏叶在路灯下翻飞。你把手里一直没有送出去的东西放回了口袋。也许下一个学期，一切会不一样……但你知道，有些时刻，错过就是错过了。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch1_1",
+    "point_id": "teaching_front",
+    "time_slot": "after_school",
+    "chapter": 1,
+    "act": "偶遇",
+    "route": "yuki",
+    "day_range": [1, 3],
+    "speaker": "雪纪",
+    "text": "放学后的教学楼前，你被一阵"咔嚓"声吸引。一个银灰长发的女生正半蹲着，把相机镜头对准了西沉的太阳。发现你靠近后，她毫不犹豫地把镜头转向了你。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ch1_posed", "yuki_ch1_blocked"],
+      "affection_at_least": {},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "配合她的镜头，摆个自然的姿势",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ch1_posed"],
+        "mark_visited": true,
+        "result_text": "她放下相机时嘴角翘了一下——很快又恢复了面无表情。"不错，光刚好。"她低声说，更像是在自言自语。",
+        "advance_time": false
+      },
+      {
+        "text": "举起手挡住脸，问她在拍什么",
+        "affection_delta": {"yuki": 1},
+        "set_flags": ["yuki_ch1_blocked"],
+        "mark_visited": true,
+        "result_text": "她有些失望地放下相机。"光跑了。"说完就转身继续找别的角度了。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch1_2",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 1,
+    "act": "偶遇",
+    "route": "yuki",
+    "day_range": [2, 5],
+    "speaker": "雪纪",
+    "text": "你想找个安静的地方看书，推开了社团楼二楼一扇没关紧的门——一间小小的暗房，红色安全灯下，雪纪正小心翼翼地用镊子夹起一张刚冲好的照片。她听到门响，头都没抬地说了句"门关好，别漏光。"",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ch1_darkroom", "yuki_ch1_left"],
+      "affection_at_least": {},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "轻手轻脚地把门关好，站在角落安静看她操作",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ch1_darkroom"],
+        "mark_visited": true,
+        "result_text": "冲好的照片浮现在药水中——是你第一天到校时的侧脸。她发现你在看，什么也没解释，继续冲下一张。",
+        "advance_time": false
+      },
+      {
+        "text": "道歉说走错了，退出去",
+        "affection_delta": {"yuki": 0},
+        "set_flags": ["yuki_ch1_left"],
+        "mark_visited": true,
+        "result_text": "你退出去关上门。走廊里传来她轻轻的叹气声——不知道是松了口气还是其他什么。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch2_1",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 2,
+    "act": "靠近",
+    "route": "yuki",
+    "day_range": [4, 7],
+    "speaker": "雪纪",
+    "text": "社团招新周，各社团都在拉人。摄影社的桌子前冷冷清清——只有雪纪一个人，面前放着一本手工装订的作品集。她似乎并不在意有没有人来，只是安静地翻着自己的照片。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ch2_joined", "yuki_ch2_praised"],
+      "affection_at_least": {},
+      "flag_any": ["yuki_ch1_posed", "yuki_ch1_darkroom", "yuki_ch1_blocked"],
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "坐下来认真翻看她的作品集，说想加入摄影社",
+        "affection_delta": {"yuki": 4},
+        "set_flags": ["yuki_ch2_joined"],
+        "mark_visited": true,
+        "result_text": "她的眼睛亮了一下但马上恢复平静。"……你确定？就我一个人。"你点头。她掏出一张皱巴巴的入社表格，像是已经揣了很久。",
+        "advance_time": false
+      },
+      {
+        "text": "站着翻了翻作品集，夸她拍得好",
+        "affection_delta": {"yuki": 2},
+        "set_flags": ["yuki_ch2_praised"],
+        "mark_visited": true,
+        "result_text": ""……嗯。"她低下头，耳尖微微泛红。你注意到她的右耳上有一只小小的星形耳钉。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch2_2",
+    "point_id": "pier_park",
+    "time_slot": "after_school",
+    "chapter": 2,
+    "act": "靠近",
+    "route": "yuki",
+    "day_range": [6, 10],
+    "speaker": "雪纪",
+    "text": "雪纪带你来到学校后门附近的码头公园。"这里的光在下午四点最好。"她说着就开始拍海鸥、木栈道、生锈的系船柱……然后镜头又转向了你。海风把她银灰色的长发吹起来。",
+    "conditions": {
+      "required_flags": ["yuki_ch2_joined"],
+      "blocked_flags": ["yuki_ch2_smile", "yuki_ch2_reverse"],
       "affection_at_least": {"yuki": 4},
       "once": true
     },
     "choices": [
       {
-        "text": "答应下次做她镜头里的固定搭档",
-        "affection_delta": {"yuki": 2},
-        "set_flags": ["yuki_route_complete"],
+        "text": "这次不躲，直视镜头微微一笑",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ch2_smile"],
         "mark_visited": true,
-        "unlock_cg": "cg_yuki_gate",
-        "result_text": "你解锁了雪纪的夜色校门回忆。",
+        "unlock_cg": "cg_pier_sunset",
+        "result_text": "快门声响了。她按下快门后放下相机，脸颊比夕阳还红。"……刚才那张，不许删。"",
+        "advance_time": true
+      },
+      {
+        "text": "抢过她的相机反拍她",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ch2_reverse"],
+        "mark_visited": true,
+        "unlock_cg": "cg_pier_sunset",
+        "result_text": "她愣住了——然后第一次笑出了声。那笑声被海风吹散，像是碎成了一片一片的光。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch2_3",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 2,
+    "act": "靠近",
+    "route": "yuki",
+    "day_range": [8, 12],
+    "speaker": "雪纪",
+    "text": "帮雪纪整理暗房时，你在柜子里翻到了一张泛黄的照片——两个女生的合影，其中一个明显是年幼的雪纪。她看到后沉默了很久，然后轻轻把照片拿回去。"那是以前的事了。"",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ch2_old_photo", "yuki_ch2_asked_who"],
+      "affection_at_least": {"yuki": 5},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "不追问，转而说"你小时候也很可爱"",
+        "affection_delta": {"yuki": 2},
+        "set_flags": ["yuki_ch2_old_photo"],
+        "mark_visited": true,
+        "result_text": "她别过头。你看到她的耳尖红了。"……闭嘴。"声音比平时小了很多。",
+        "advance_time": false
+      },
+      {
+        "text": "问那是谁",
+        "affection_delta": {"yuki": 0},
+        "set_flags": ["yuki_ch2_asked_who"],
+        "mark_visited": true,
+        "result_text": "她摇摇头没有回答，把照片小心地夹进了一本旧相册的最后一页。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch3_1",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 3,
+    "act": "波澜",
+    "route": "yuki",
+    "day_range": [11, 15],
+    "speaker": "雪纪",
+    "text": "雪纪收到一条消息后整个人安静得异常。你不经意问了一句"怎么了"，她淡淡地说："小唯要来学校拿东西。"你后来从其他同学那里了解到，小唯是摄影社之前的社员，也是雪纪在学校唯一的朋友，但去年突然退社了。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ch3_xiaowei"],
+      "affection_at_least": {"yuki": 7},
+      "flag_any": ["yuki_ch2_old_photo", "yuki_ch2_asked_who"],
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "记下这件事，以后找机会了解",
+        "affection_delta": {"yuki": 1},
+        "set_flags": ["yuki_ch3_xiaowei"],
+        "mark_visited": true,
+        "result_text": "她没再多说什么。但你注意到她那天下午再没有拿起过相机。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch3_2",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 3,
+    "act": "波澜",
+    "route": "yuki",
+    "day_range": [13, 17],
+    "speaker": "雪纪",
+    "text": "你到社团楼时听到暗房里有争吵声。小唯的声音："你总是这样，只活在镜头后面！我受不了了才走的！"暗房门猛地打开，一个扎马尾的女生冲出来，和你擦肩而过。你推开门——雪纪坐在地上，旁边散落着几张照片。她没有哭，但眼神比任何时候都空洞。",
+    "conditions": {
+      "required_flags": ["yuki_ch3_xiaowei"],
+      "blocked_flags": ["yuki_ch3_stayed", "yuki_ch3_left_alone"],
+      "affection_at_least": {"yuki": 8},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "坐到她旁边，安静地帮她捡起散落的照片",
+        "affection_delta": {"yuki": 4},
+        "set_flags": ["yuki_ch3_stayed"],
+        "mark_visited": true,
+        "result_text": "你一张一张把照片捡起来。全是小唯和雪纪的合影。她没有说话，但在你把照片递给她时，手指轻轻碰了一下你的指尖。",
+        "advance_time": true
+      },
+      {
+        "text": "问她需不需要聊聊",
+        "affection_delta": {"yuki": 1},
+        "set_flags": ["yuki_ch3_left_alone"],
+        "mark_visited": true,
+        "result_text": "她摇摇头说"我想一个人待着"。你退出暗房，轻轻关上了门。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch3_3",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 3,
+    "act": "波澜",
+    "route": "yuki",
+    "day_range": [15, 19],
+    "speaker": "",
+    "text": "雪纪好几天没有出现在社团楼。你独自去暗房时发现桌上有一卷被标注了日期的胶卷——日期是去年的，小唯退社前的最后一天。雪纪一直没有冲洗它。胶卷旁边放着一张字条："如果我不在，帮我锁门。"",
+    "conditions": {
+      "required_flags": ["yuki_ch3_stayed"],
+      "blocked_flags": ["yuki_ch3_undeveloped"],
+      "affection_at_least": {"yuki": 9},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "小心地把胶卷放回原位，帮她锁好门",
+        "affection_delta": {"yuki": 1},
+        "set_flags": ["yuki_ch3_undeveloped"],
+        "mark_visited": true,
+        "result_text": "你把门锁好。走出社团楼时天已经暗了。你决定明天去她可能在的地方找她。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch4_1",
+    "point_id": "pier_park",
+    "time_slot": "after_school",
+    "chapter": 4,
+    "act": "破冰",
+    "route": "yuki",
+    "day_range": [17, 22],
+    "speaker": "雪纪",
+    "text": "你按直觉去了码头公园。雪纪坐在长椅上，相机放在旁边——没有在拍照。海风吹起她银灰色的长发。你在她旁边坐下。很久之后，她开口了："小唯说得对，我一直躲在镜头后面。"",
+    "conditions": {
+      "required_flags": ["yuki_ch3_undeveloped"],
+      "blocked_flags": ["yuki_ch4_eyes_open", "yuki_ch4_comfort"],
+      "affection_at_least": {"yuki": 10},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": ""那就试试放下相机看看？"然后你把手遮在她眼前再移开",
+        "affection_delta": {"yuki": 4},
+        "set_flags": ["yuki_ch4_eyes_open"],
+        "mark_visited": true,
+        "result_text": "她眨了眨眼。没有镜头的阻隔，她第一次直视你的脸超过三秒钟。"……原来你的眼睛是这个颜色。"她小声说。",
+        "advance_time": false
+      },
+      {
+        "text": ""但正是因为你的眼睛才能看到那些别人忽略的东西"",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ch4_comfort"],
+        "mark_visited": true,
+        "result_text": "她低下头，手指无意识地摩挲着相机背带。"……你是第一个这么说的。"",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch4_2",
+    "point_id": "club_building",
+    "time_slot": "night",
+    "chapter": 4,
+    "act": "破冰",
+    "route": "yuki",
+    "day_range": [20, 24],
+    "speaker": "雪纪",
+    "text": "雪纪终于决定冲洗那卷搁了一年的胶卷。她请你留下来陪她——"一个人的话，我怕自己又逃走。"暗房红灯下，照片慢慢浮现在药水中。小唯和雪纪的合照、社团活动、一张小唯偷拍的雪纪笑脸。",
+    "conditions": {
+      "required_flags": ["yuki_ch4_eyes_open"],
+      "blocked_flags": ["yuki_ch4_developed"],
+      "affection_at_least": {"yuki": 12},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "安静地陪她看完所有照片",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ch4_developed"],
+        "mark_visited": true,
+        "result_text": "最后一张照片浮现——是小唯偷拍的雪纪，笑得比任何时候都灿烂。"原来她也拍过我啊。"雪纪说着，泪终于无声地落了下来。你什么都没说，只是把手放在了她的手背上。",
+        "advance_time": true
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch5_good",
+    "point_id": "lighthouse",
+    "time_slot": "night",
+    "chapter": 5,
+    "act": "定格",
+    "route": "yuki",
+    "day_range": [25, 28],
+    "speaker": "雪纪",
+    "text": "课桌里多了一张照片——一张你从未注意到的、她在某个瞬间拍下的你的侧脸。照片背面写着一行小字："旧灯塔，今晚。"\n\n灯塔顶层，海风和星光。她把相机递给你，说："帮我拍一张。"然后她做了一个从未做过的事——面对镜头，笑了。",
+    "conditions": {
+      "required_flags": ["yuki_ch4_developed"],
+      "blocked_flags": ["yuki_ending_true", "yuki_ending_warm"],
+      "affection_at_least": {"yuki": 15},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "按下快门，然后放下相机走到她面前",
+        "affection_delta": {"yuki": 5},
+        "set_flags": ["yuki_ending_true"],
+        "mark_visited": true,
+        "unlock_cg": "cg_yuki_lighthouse_true",
+        "result_text": "你放下相机。海风在你们之间穿过。她没有举起相机，只是看着你。"我一直在找一种光。"她说，声音轻得几乎被海浪盖过，"后来发现……是你身上的。"满天星光倒映在海面上，也倒映在她的眼睛里。",
+        "advance_time": false
+      },
+      {
+        "text": "按下快门，说"这是我拍过最好的照片"",
+        "affection_delta": {"yuki": 3},
+        "set_flags": ["yuki_ending_warm"],
+        "mark_visited": true,
+        "unlock_cg": "cg_yuki_lighthouse_warm",
+        "result_text": "她接过相机看了看照片，沉默了很久。然后她把相机挂回脖子上，小声说："以后也帮我拍。"这不是请求，更像是约定。海风温柔得像一声叹息。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch5_normal",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 5,
+    "act": "定格",
+    "route": "yuki",
+    "day_range": [26, 28],
+    "speaker": "雪纪",
+    "text": "学期末摄影社的小型展览。只有几个人来看。你走到最后一面墙——整面墙都是你的照片。不同角度、不同时段、不同表情。旁边的标签上写着展览名："心跳"。雪纪站在你身后。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ending_normal", "yuki_ending_true", "yuki_ending_warm"],
+      "affection_at_least": {"yuki": 8},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "转身看着她",
+        "affection_delta": {"yuki": 2},
+        "set_flags": ["yuki_ending_normal"],
+        "mark_visited": true,
+        "unlock_cg": "cg_yuki_exhibition",
+        "result_text": ""谢谢你当我的模特。"她轻声说。展览墙上的照片里，你在笑、在发呆、在看书、在走路。每一张都是她眼中的你。你从来不知道，原来自己被人这样认真地看过。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_ch5_miss",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 5,
+    "act": "定格",
+    "route": "yuki",
+    "day_range": [27, 28],
+    "speaker": "",
+    "text": "学期最后一天你去社团楼，暗房的门锁着。透过门缝能看到里面已经收拾干净了。桌上放着一个信封——里面是一张你第一天来学校时被偷拍的照片。背面什么也没写。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": ["yuki_ending_miss", "yuki_ending_true", "yuki_ending_warm", "yuki_ending_normal"],
+      "affection_at_least": {"yuki": 1},
+      "affection_below": {"yuki": 8},
+      "once": true
+    },
+    "choices": [
+      {
+        "text": "把照片收好",
+        "affection_delta": {},
+        "set_flags": ["yuki_ending_miss"],
+        "mark_visited": true,
+        "result_text": "暗房里再也没有红光亮起。她拍过的所有照片，除了这一张，全都带走了。你捏着照片走出社团楼，海风从远处吹来，带着盐和记忆的味道。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_daily_duty",
+    "point_id": "school_gate",
+    "time_slot": "morning",
+    "chapter": 0,
+    "act": "日常",
+    "route": "lin",
+    "day_range": [2, 28],
+    "speaker": "林澄",
+    "text": "林澄在校门口拿着签到表检查值日情况。你经过时她抬起头。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1
+    },
+    "choices": [
+      {
+        "text": "和她打声招呼",
+        "affection_delta": {"lin": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": ""早。"她简短地回了一个字，但嘴角似乎微微上扬了一点。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_daily_vending",
+    "point_id": "teaching_front",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "lin",
+    "day_range": [3, 28],
+    "speaker": "林澄",
+    "text": "林澄在自动贩卖机前犹豫着。你路过时她迅速按了一罐黑咖啡——但你注意到她的手指在草莓牛奶上悬了很久。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {"lin": 2},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.4
+    },
+    "choices": [
+      {
+        "text": "假装没看见",
+        "affection_delta": {"lin": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "她抱着黑咖啡走了。你偷偷笑了——原来她喜欢甜的。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_daily_overtime",
+    "point_id": "club_building",
+    "time_slot": "night",
+    "chapter": 0,
+    "act": "日常",
+    "route": "lin",
+    "day_range": [5, 28],
+    "speaker": "林澄",
+    "text": "学生会办公室的灯还亮着。你推开门，林澄抬起头："又来了啊。"语气里有一丝说不清的东西——可能是无奈，也可能是欣慰。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {"lin": 4},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.35
+    },
+    "choices": [
+      {
+        "text": "帮她分担一些工作",
+        "affection_delta": {"lin": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "她犹豫了一下，把一叠需要盖章的表格推过来。"那……这些麻烦你了。"",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_daily_glasses",
+    "point_id": "courtyard",
+    "time_slot": "morning",
+    "chapter": 0,
+    "act": "日常",
+    "route": "lin",
+    "day_range": [4, 28],
+    "speaker": "林澄",
+    "text": "中庭的早晨，林澄摘下眼镜在擦。没有了镜片的阻隔，她看到你走近时眯着眼问"是陆辰吗？"，声音比平时柔软得多。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {"lin": 3},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.3
+    },
+    "choices": [
+      {
+        "text": "嗯，是我",
+        "affection_delta": {"lin": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "她匆忙戴上眼镜，好像被看到了什么不该被看到的样子。"没什么，走吧。"",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_lin_daily_umbrella",
+    "point_id": "school_gate",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "lin",
+    "day_range": [6, 28],
+    "speaker": "林澄",
+    "text": "突然下起了雨。校门口的人群纷纷找地方避雨。林澄撑着伞站在门口，看到没带伞的你后犹豫了两秒，然后把伞递出一半。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {"lin": 5},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.25
+    },
+    "choices": [
+      {
+        "text": "道谢，一起走到能避雨的地方",
+        "affection_delta": {"lin": 2},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "伞不大，肩膀难免碰在一起。她的脸侧过去不看你，但没有拉开距离。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_daily_spot",
+    "point_id": "courtyard",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "yuki",
+    "day_range": [2, 28],
+    "speaker": "雪纪",
+    "text": "你在中庭看到雪纪蹲在一个不可思议的角度拍东西。走近一看，是一只趴在暖气管上晒太阳的橘猫。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.4
+    },
+    "choices": [
+      {
+        "text": "安静地蹲下来一起看",
+        "affection_delta": {"yuki": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": ""……等一下，这个光不错。"她按下快门，橘猫打了个哈欠。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_daily_cat",
+    "point_id": "courtyard",
+    "time_slot": "morning",
+    "chapter": 0,
+    "act": "日常",
+    "route": "yuki",
+    "day_range": [3, 28],
+    "speaker": "雪纪",
+    "text": "早上的中庭很安静。雪纪在花坛边给一只黑白花猫拍照。猫咪似乎很配合，摆出各种慵懒的姿势。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {"yuki": 2},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.35
+    },
+    "choices": [
+      {
+        "text": "走过去看她拍的照片",
+        "affection_delta": {"yuki": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "她把相机屏幕转过来给你看。猫的毛在晨光里像镶了金边。"这只叫阿福，每天都来。"",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_daily_develop",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "yuki",
+    "day_range": [5, 28],
+    "speaker": "雪纪",
+    "text": "暗房里，雪纪正在冲洗照片。看到你来了，她指了指计时器。"帮我看着时间，90秒。"",
+    "conditions": {
+      "required_flags": ["yuki_ch2_joined"],
+      "blocked_flags": [],
+      "affection_at_least": {"yuki": 4},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.35
+    },
+    "choices": [
+      {
+        "text": "认真帮她计时",
+        "affection_delta": {"yuki": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "红灯下，照片在药水里慢慢显影。这次是一张校园风景——阳光穿过银杏叶的间隙洒在走廊上。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_daily_stargazing",
+    "point_id": "rooftop",
+    "time_slot": "night",
+    "chapter": 0,
+    "act": "日常",
+    "route": "yuki",
+    "day_range": [8, 28],
+    "speaker": "雪纪",
+    "text": "天台上，雪纪把相机架在三脚架上。"长曝光拍星轨。大概要等二十分钟。"她坐在地上仰望夜空。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {"yuki": 6},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.3
+    },
+    "choices": [
+      {
+        "text": "在她旁边坐下，一起看星空",
+        "affection_delta": {"yuki": 1},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "二十分钟的安静。她时不时指出某颗星星的名字。你发现她知道的比说出来的多得多。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_yuki_daily_print",
+    "point_id": "club_building",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "yuki",
+    "day_range": [7, 28],
+    "speaker": "雪纪",
+    "text": "雪纪拿着一张洗好的照片朝你走来。"给你的。"照片里是你某天在操场边看书时的侧影，光线很美。",
+    "conditions": {
+      "required_flags": ["yuki_ch2_joined"],
+      "blocked_flags": [],
+      "affection_at_least": {"yuki": 5},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.25
+    },
+    "choices": [
+      {
+        "text": "收下照片，说谢谢",
+        "affection_delta": {"yuki": 2},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": ""……随便拍的而已。"她转身走了。但你注意到照片的边角被裁剪得非常精细——一点也不随便。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_general_sunset",
+    "point_id": "rooftop",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "general",
+    "day_range": [1, 28],
+    "speaker": "",
+    "text": "天台上，夕阳把整个校园染成了橘红色。远处的海面上铺着一条金色的光带。风里有青草和潮湿的味道。这个瞬间，转学的不安感似乎消散了一些。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.5
+    },
+    "choices": [
+      {
+        "text": "在这里多待一会儿",
+        "affection_delta": {},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "你靠在栏杆上，看着太阳一点点沉入海平线。放学的钟声从远处传来，像是另一个世界的声音。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_general_rain",
+    "point_id": "school_gate",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "general",
+    "day_range": [1, 28],
+    "speaker": "",
+    "text": "突然下起雨来。校门口的银杏树叶被雨打得沙沙响，同学们纷纷加快脚步。空气里弥漫着泥土和湿草的清新气息。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.3
+    },
+    "choices": [
+      {
+        "text": "在屋檐下等雨停",
+        "affection_delta": {},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "雨滴落在水洼上弹出一圈圈涟漪。这种时候，时间好像慢了下来。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_general_bell",
+    "point_id": "teaching_front",
+    "time_slot": "morning",
+    "chapter": 0,
+    "act": "日常",
+    "route": "general",
+    "day_range": [1, 28],
+    "speaker": "",
+    "text": "上课铃声从教学楼传出来。你加快脚步穿过人流。走廊里的光影在脚下飞速后退。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.4
+    },
+    "choices": [
+      {
+        "text": "冲进教室",
+        "affection_delta": {},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "赶上了。坐到座位上才注意到心跳很快——不知道是因为跑步还是其他什么。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_general_canteen",
+    "point_id": "canteen",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "general",
+    "day_range": [1, 28],
+    "speaker": "",
+    "text": "食堂二楼靠窗的角落位竟然空着。你端着餐盘坐下来，窗外是整个操场的全景。远处有人在跑步，有人在踢球。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.4
+    },
+    "choices": [
+      {
+        "text": "边吃边看窗外",
+        "affection_delta": {},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "食堂的咖喱饭味道意外地好。窗外的晚霞把操场染成了温暖的颜色。这个学校……好像还不错。",
+        "advance_time": false
+      }
+    ]
+  },
+  {
+    "id": "evt_general_breeze",
+    "point_id": "pier_park",
+    "time_slot": "after_school",
+    "chapter": 0,
+    "act": "日常",
+    "route": "general",
+    "day_range": [1, 28],
+    "speaker": "",
+    "text": "码头公园的长椅上，海风温柔地吹过。木栈道尽头有海鸥在低飞。远处的旧灯塔安静地矗立着。",
+    "conditions": {
+      "required_flags": [],
+      "blocked_flags": [],
+      "affection_at_least": {},
+      "once": false,
+      "daily_limit": 1,
+      "trigger_chance": 0.4
+    },
+    "choices": [
+      {
+        "text": "在长椅上坐一会儿",
+        "affection_delta": {},
+        "set_flags": [],
+        "mark_visited": false,
+        "result_text": "海浪声节奏平稳，像是大海的呼吸。盐味的空气里混着阳光晒过木板的气味。你第一次觉得，这座城市已经开始变得像"自己的"了。",
         "advance_time": false
       }
     ]

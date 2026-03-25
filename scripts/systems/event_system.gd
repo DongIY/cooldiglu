@@ -8,6 +8,8 @@ const EVENTS_DATA_PATH := "res://data/events/events.json"
 
 var events: Array = []
 var events_by_key: Dictionary = {}
+## Tracks how many times each event has been triggered today (for daily_limit).
+var daily_trigger_counts: Dictionary = {}
 
 func _ready() -> void:
 	reload_data()
@@ -33,6 +35,10 @@ func reload_data() -> void:
 			events_by_key[key] = []
 		events_by_key[key].append(entry)
 
+## Call this when a new day starts to reset daily trigger counts.
+func on_new_day() -> void:
+	daily_trigger_counts.clear()
+
 func has_available_event(point_id: String) -> bool:
 	return not get_available_event(point_id).is_empty()
 
@@ -49,6 +55,9 @@ func trigger_point(point_id: String) -> bool:
 	if event_payload.is_empty():
 		notification.emit("现在这里没有新的事情发生。")
 		return false
+	# Track daily trigger count for this event
+	var evt_id := str(event_payload.get("id", ""))
+	daily_trigger_counts[evt_id] = daily_trigger_counts.get(evt_id, 0) + 1
 	dialogue_requested.emit(event_payload)
 	return true
 
@@ -84,18 +93,65 @@ func _make_key(point_id: String, time_slot: String) -> String:
 
 func _conditions_met(event_payload: Dictionary) -> bool:
 	var conditions: Dictionary = event_payload.get("conditions", {})
-	if bool(conditions.get("once", false)) and GameState.was_event_visited(str(event_payload.get("id", ""))):
+	var event_id := str(event_payload.get("id", ""))
+
+	# --- once: if event can only be triggered once and already visited ---
+	if bool(conditions.get("once", false)) and GameState.was_event_visited(event_id):
 		return false
+
+	# --- daily_limit: max triggers per day (for repeatable daily events) ---
+	var daily_limit: int = int(conditions.get("daily_limit", 0))
+	if daily_limit > 0:
+		var current_count: int = daily_trigger_counts.get(event_id, 0)
+		if current_count >= daily_limit:
+			return false
+
+	# --- trigger_chance: random probability gate ---
+	var trigger_chance: float = float(conditions.get("trigger_chance", 0.0))
+	if trigger_chance > 0.0 and trigger_chance < 1.0:
+		if randf() > trigger_chance:
+			return false
+
+	# --- day_range: event only available within [min_day, max_day] ---
+	var day_range: Array = event_payload.get("day_range", [])
+	if day_range.size() >= 2:
+		var current_day: int = GameState.current_day
+		if current_day < int(day_range[0]) or current_day > int(day_range[1]):
+			return false
+
+	# --- required_flags: all listed flags must be set ---
 	for flag_name in conditions.get("required_flags", []):
 		if not GameState.has_flag(str(flag_name)):
 			return false
+
+	# --- blocked_flags: none of these flags may be set ---
 	for flag_name in conditions.get("blocked_flags", []):
 		if GameState.has_flag(str(flag_name)):
 			return false
+
+	# --- flag_any: at least one of these flags must be set ---
+	var flag_any: Array = conditions.get("flag_any", [])
+	if not flag_any.is_empty():
+		var any_met := false
+		for flag_name in flag_any:
+			if GameState.has_flag(str(flag_name)):
+				any_met = true
+				break
+		if not any_met:
+			return false
+
+	# --- affection_at_least: character affection must be >= threshold ---
 	var affection_requirements: Dictionary = conditions.get("affection_at_least", {})
 	for character_id in affection_requirements.keys():
 		if AffectionSystem.get_affection(character_id) < int(affection_requirements[character_id]):
 			return false
+
+	# --- affection_below: character affection must be < threshold ---
+	var affection_below: Dictionary = conditions.get("affection_below", {})
+	for character_id in affection_below.keys():
+		if AffectionSystem.get_affection(character_id) >= int(affection_below[character_id]):
+			return false
+
 	return true
 
 func _find_event_by_id(event_id: String) -> Dictionary:

@@ -50,3 +50,35 @@ point_id = "rooftop"
 display_name = "天台入口"
 prompt_text = "上去看看夜色吧。"
 interaction_radius = 88.0
+
+[node name="ClubBuilding" type="Node2D" parent="."]
+position = Vector2(560, 460)
+script = ExtResource("3")
+point_id = "club_building"
+display_name = "社团楼"
+prompt_text = "走廊里贴满了各种社团的海报。"
+interaction_radius = 92.0
+
+[node name="Canteen" type="Node2D" parent="."]
+position = Vector2(840, 520)
+script = ExtResource("3")
+point_id = "canteen"
+display_name = "食堂"
+prompt_text = "二楼靠窗的角落似乎空着。"
+interaction_radius = 88.0
+
+[node name="PierPark" type="Node2D" parent="."]
+position = Vector2(200, 580)
+script = ExtResource("3")
+point_id = "pier_park"
+display_name = "码头公园"
+prompt_text = "海风温柔地吹过木栈道。"
+interaction_radius = 96.0
+
+[node name="Lighthouse" type="Node2D" parent="."]
+position = Vector2(1100, 560)
+script = ExtResource("3")
+point_id = "lighthouse"
+display_name = "旧灯塔"
+prompt_text = "废弃灯塔矗立在海边，据说能爬到顶层。"
+interaction_radius = 84.0
